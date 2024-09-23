@@ -1,0 +1,539 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: 
+
+
+BO_ 2566897703 VCU3_Proprietary_A0: 8 Vector__XXX
+ SG_ BodySensorState : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SideAngleTipUpRestrictionAlarm : 61|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehicleSpeedWarning : 59|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DifferentialLockStatus : 56|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TransmissionGearState : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ParkBrakeLamp : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EngineBrakeLamp : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RetarderLamp : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ km_counter : 16|32@1+ (0.001,0) [0|4294967.294] "km" Vector__XXX
+ SG_ VehicleSpeed : 0|16@1+ (0.00390625,0) [0|150] "km/h" Vector__XXX
+
+BO_ 2566897959 VCU3_Proprietary_A1: 8 Vector__XXX
+ SG_ VCUCONFIGLEVEL : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ WasherTankLevel : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BodyStateLamp : 40|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ EngineAirFilterClogged : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LampFailure : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LubricationSystemLamp : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EngineCoolantLevelLamp : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GeneralFaultLamp : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ HydraulicSystemLamp : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EmergencySteeringLamp : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BrakeFaultLamp : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RoofBeaconLight : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SeatBeltLamp : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RearMirrorArmWorkLights : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FrontMirrorArmWorkLights : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CabinRoofWorkLights : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DirectionLight : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ParkMainLightStatus : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ FuelLevel : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+
+BO_ 2566899751 VCU3_Proprietary_A8: 8 Vector__XXX
+ SG_ DrivelineTorque : 48|16@1+ (8,-256000) [-256000|256000] "Nm" Vector__XXX
+ SG_ TransmissionInputTorque : 32|16@1+ (1,-32000) [-32000|32000] "Nm" Vector__XXX
+ SG_ EngineNetTorque : 16|16@1+ (1,-32000) [-32000|32000] "Nm" Vector__XXX
+ SG_ CooldownTimer : 0|16@1+ (0.005,0) [0|300] "s" Vector__XXX
+
+BO_ 2566900007 VCU3_Proprietary_A9: 8 Vector__XXX
+ SG_ CalcLoadPressure : 48|16@1+ (0.025,-100) [-100|415] "bar" Vector__XXX
+ SG_ MaterialType : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ LoadWeightLampStatus : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CalcLoadWeightUncompensated : 16|16@1+ (0.1,-100) [-100|500] "t" Vector__XXX
+ SG_ CalcLoadWeight : 0|16@1+ (0.1,-100) [-100|500] "t" Vector__XXX
+
+BO_ 2566901799 VCU3_Proprietary_A16: 8 Vector__XXX
+ SG_ UnfilteredCooldownTimer : 48|16@1+ (0.005,0) [0|300] "s" Vector__XXX
+ SG_ RetarderPower : 32|16@1+ (1,-32000) [-32000|32000] "kW" Vector__XXX
+ SG_ AccumulatorFirstChargeInProgress : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AccumulatorFirstChargeProgress : 24|7@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ CoolingFanDrive : 16|8@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ EngineNewPower : 0|16@1+ (1,-32000) [-32000|32000] "kW" Vector__XXX
+
+BO_ 2566855467 VCU3_Proprietary_B11: 8 Vector__XXX
+ SG_ RU3SidewaysAngleUncal : 48|16@1+ (0.01,-200) [-200|200] "��" Vector__XXX
+ SG_ RU3LongitudinalAngleUncal : 32|16@1+ (0.01,-200) [-200|200] "��" Vector__XXX
+ SG_ RU3SidewaysAngle : 16|16@1+ (0.01,-200) [-200|200] "��" Vector__XXX
+ SG_ RU3LongitudinalAngle : 0|16@1+ (0.01,-200) [-200|200] "��" Vector__XXX
+
+BO_ 2566855723 VCU3_Proprietary_B12: 8 Vector__XXX
+ SG_ FU3SidewaysAngleUncal : 48|16@1+ (0.01,-200) [-200|200] "��" Vector__XXX
+ SG_ FU3LongitudinalAngleUncal : 32|16@1+ (0.01,-200) [-200|200] "��" Vector__XXX
+ SG_ FU3SidewaysAngle : 16|16@1+ (0.01,-200) [-200|200] "��" Vector__XXX
+ SG_ FU3LongitudinalAngle : 0|16@1+ (0.01,-200) [-200|200] "��" Vector__XXX
+
+BO_ 2566856491 VCU3_Proprietary_B15: 8 Vector__XXX
+ SG_ BodyAngle2 : 48|16@1+ (0.01,-200) [0|77] "��" Vector__XXX
+ SG_ BU3LongitudinalAngleUuncal : 32|16@1+ (0.01,-200) [-200|200] "��" Vector__XXX
+ SG_ BodyAngleUncal : 16|16@1+ (0.01,-200) [-10|90] "��" Vector__XXX
+ SG_ BodyAngle : 0|16@1+ (0.01,-200) [0|77] "��" Vector__XXX
+
+BO_ 2231316267 VCU3_Proprietary_RTC: 8 Vector__XXX
+ SG_ RTCXtalCompensation : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DaylightSavingsTimeFlag : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ UTCMinuteOffset : 32|15@1+ (1,-4096) [-2880|2880] "min" Vector__XXX
+ SG_ UTCTime : 0|32@1+ (1,0) [0|4294967293] "sec" Vector__XXX
+
+BO_ 2566885419 VCU3_Proprietary_V0: 8 Vector__XXX
+ SG_ AmbientTemperature : 48|16@1+ (0.1,-273) [-110|650] "��C" Vector__XXX
+ SG_ CurrentActiveVehicleSpeedLimit : 32|16@1+ (0.00390625,0) [0|99] "km/h" Vector__XXX
+ SG_ RetarderForceSetting : 24|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ SelectedVehicleSpeedLimitActive : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ WheelSpinAlarmBuzzerActive : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SeatBeltAlarmActive : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CustomerBodyUpAlarmActive : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkBrakeOffNeutralNoBrakePedal : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TryDriveWithParkBrakeActive : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SuspensionPopupDisplay : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngineAirFilterPressure : 8|8@1+ (1,0) [0|100] "mbar" Vector__XXX
+ SG_ HydraulicTankLevel : 0|8@1+ (1,0) [0|250] "%" Vector__XXX
+
+BO_ 2566885675 VCU3_Proprietary_V1: 8 Vector__XXX
+ SG_ VehicleStage : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VehicleModel : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ WDBSetting : 40|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ WDBTankLevel : 32|8@1+ (1,0) [0|250] "%" Vector__XXX
+ SG_ ASDTimer : 16|16@1+ (160,0) [0|65536] "ms" Vector__XXX
+ SG_ F4KeyInUseByVCU3Func : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ F3KeyInUseByVCU3Func : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ F2KeyInUseByVCU3Func : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ F1KeyInUseByVCU3Func : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TryingToStartEngine : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ImmobilizerStatus : 5|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ASDInfoFlag : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASDActivated : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ WaterInFuelSensor : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 2566886187 VCU3_Proprietary_V3: 8 Vector__XXX
+ SG_ LaunchTorque : 48|16@1+ (8,-32000) [-256000|256000] "Nm" Vector__XXX
+ SG_ HoldBrakePopupInfo : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ HoldBrakeActivationStatus : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCbasedDrivelineTorque : 24|16@1+ (8,-32000) [-256000|256000] "Nm" Vector__XXX
+ SG_ HoldBrakeAlarmByEngineStop : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HoldBrakeMaxUphillAngleExceeded : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HoldBrakeMaxDownhillAngleExceed : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HoldBrakeAngleDiffTooBig : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HoldBrakeMissingFU3 : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HoldBrakeMissingRU3_4 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HoldBrakeActiveConditionValid : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HoldBrakeProgressBar : 8|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ DisplayLockoutCondition : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DisplayTemperatureCondition : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DisplayIdleCond : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DisplayNeutralCondition : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DisplayParkBrakeEngagedCondition : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DPFManualRegenerationAvail : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 2566860810 VCU3_Proprietary_E0: 8 Vector__XXX
+ SG_ OutputShaftSpeed : 48|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+ SG_ DifferentialSpeedFactor : 32|16@1+ (6.103515625e-05,0) [0|3] "" Vector__XXX
+ SG_ NotUsed_E0_2 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NotUsed_E0_1 : 21|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SSBit : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IPBit : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ARBit : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RearAxleRotationalDirection : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RearAxleSpeed : 0|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+
+BO_ 2364539904 ECU_EEC1: 8 Vector__XXX
+ SG_ EngineSpeed : 24|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+
+BO_ 2365554944 ECU_DLN2: 8 Vector__XXX
+ SG_ Charge61 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LowEngineOilPressure : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DLN_msg_config_version : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566843904 ECU_ET1: 8 Vector__XXX
+ SG_ EngineCoolantTemperature : 0|8@1+ (1,-40) [-40|210] "��C" Vector__XXX
+
+BO_ 2364539395 TCU_ETC1: 8 Vector__XXX
+ SG_ TMTorqueConverterLockupEngaged : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2565866755 TCU_ETC2: 8 Vector__XXX
+ SG_ TransmissionCurrentGear : 24|8@1+ (1,-125) [-5|8] "" Vector__XXX
+ SG_ TransmissionSelectedGear : 0|8@1+ (1,-125) [-5|8] "" Vector__XXX
+
+BO_ 2566846467 TCU_TRF1: 8 Vector__XXX
+ SG_ TransmissionOilTemperature : 32|16@1+ (0.03125,-273) [-273|1734.96875] "��C" Vector__XXX
+
+BO_ 2566847248 TCU_RF: 8 Vector__XXX
+ SG_ RetarderOilTemperature : 8|8@1+ (1,-40) [-40|210] "��C" Vector__XXX
+
+BO_ 2565865488 TCU_ERC1: 8 Vector__XXX
+ SG_ ActualRetarderPercentTorque : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+
+BO_ 2566866179 TCU_ZFETC9: 8 Vector__XXX
+ SG_ TCHS : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TRHS : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TSHS : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TIOPS : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TMOTS : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TOOTS : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TIOTS : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TOOSS : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TIOSS : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GEIS : 10|3@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ROSPS : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ OHPS : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GHPS : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RCSM : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TTLM : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+
+
+
+
+CM_ BO_ 2566897703 "Vehicle speed, km_counter and lamp status";
+CM_ BO_ 2566897959 "Fuel level and lamp status";
+CM_ SG_ 2566897959 CabinRoofWorkLights "(optional)";
+CM_ BO_ 2566899751 "Cooldown timer and torque values";
+CM_ BO_ 2566900007 "Calculated load weight and lamp indicators";
+CM_ BO_ 2566901799 "Power values and charge progress";
+CM_ SG_ 2566901799 CoolingFanDrive "0%=stopped, 1%=lowest speed";
+CM_ BO_ 2566855467 "Rear frame (RU3) longitudinal and sideways angles (ZY + ZX)";
+CM_ SG_ 2566855467 RU3SidewaysAngleUncal "positive = towards right";
+CM_ SG_ 2566855467 RU3LongitudinalAngleUncal "positive = downhill";
+CM_ SG_ 2566855467 RU3SidewaysAngle "positive = towards right";
+CM_ SG_ 2566855467 RU3LongitudinalAngle "positive = downhill";
+CM_ BO_ 2566855723 "Front frame (FU3) longitudinal and sideways angles (ZY + ZX)";
+CM_ SG_ 2566855723 FU3SidewaysAngleUncal "positive = towards right";
+CM_ SG_ 2566855723 FU3LongitudinalAngleUncal "positive = downhill";
+CM_ SG_ 2566855723 FU3SidewaysAngle "positive = towards right";
+CM_ SG_ 2566855723 FU3LongitudinalAngle "positive = downhill";
+CM_ BO_ 2566856491 "Body (BU3/RU3) angles";
+CM_ SG_ 2566856491 BodyAngle2 "Gyro based";
+CM_ SG_ 2566856491 BU3LongitudinalAngleUuncal "positive = downhill";
+CM_ BO_ 2231316267 "Real Time Clock";
+CM_ SG_ 2231316267 UTCTime "Epoch = 01.01.2000 00:00.00";
+CM_ BO_ 2566885419 "Various sensor signals";
+CM_ SG_ 2566885419 RetarderForceSetting "Values in use:
+25, 50, 75 and 100 %";
+CM_ SG_ 2566885419 SelectedVehicleSpeedLimitActive "Pri 1";
+CM_ SG_ 2566885419 WheelSpinAlarmBuzzerActive "Pri 1 / popup display or extra info";
+CM_ SG_ 2566885419 SeatBeltAlarmActive "Pri 5 / popup display";
+CM_ SG_ 2566885419 CustomerBodyUpAlarmActive "Pri 4 / popup display";
+CM_ SG_ 2566885419 ParkBrakeOffNeutralNoBrakePedal "Pri 2 / popup display";
+CM_ SG_ 2566885419 TryDriveWithParkBrakeActive "Pri 3 / popup display";
+CM_ SG_ 2566885419 SuspensionPopupDisplay "Pri 6";
+CM_ SG_ 2566885419 HydraulicTankLevel "S1: 0-131%
+S2: 0-136%";
+CM_ BO_ 2566885675 "WIF and other signals";
+CM_ SG_ 2566885675 VehicleStage "based on configuration and serial number";
+CM_ SG_ 2566885675 VehicleModel "based on configuration and serial number";
+CM_ SG_ 2566885675 WDBTankLevel "S2: 0-150%";
+CM_ SG_ 2566885675 TryingToStartEngine "Trying to start engine when in-gear";
+CM_ BO_ 2566886187 "DPF Manual Regen and Hold Brake status";
+CM_ SG_ 2566886187 LaunchTorque "calculated by rear frame longitudinal angle
+negative = downhill, positive = uphill";
+CM_ SG_ 2566886187 TCbasedDrivelineTorque "[Only positive range in use]";
+CM_ SG_ 2566886187 HoldBrakeAlarmByEngineStop "Hold brake alarm due to engine stop or CAN missing";
+CM_ SG_ 2566886187 HoldBrakeAngleDiffTooBig "Hold Brake angle difference between front and rear
+too big";
+CM_ SG_ 2566886187 HoldBrakeActiveConditionValid "Hold Brake activation conditions valid except tilt reading";
+CM_ BO_ 2566860810 "Rear axle speed";
+CM_ SG_ 2566860810 OutputShaftSpeed "This is a copy of the value in latest received ETC1 message. In case of ETC1 timeout 0xFFFF (N/A) will be sent.";
+CM_ SG_ 2566860810 DifferentialSpeedFactor "Normal expected data range is 0.0000 � 2.0000. Value 0=Front moving/rear stand-still, 1=Equal speed front and rear, 2=Front stand-still/rear moving.
+Formula: Factor = Rear_speed / Output_shaft_speed. Result if filtered through a 51-tap low pass FIR filter at 100Hz rate";
+CM_ SG_ 2566860810 SSBit "Single bit, for test/development";
+CM_ SG_ 2566860810 IPBit "Single bit, for test/development";
+CM_ SG_ 2566860810 ARBit "Single bit, for test/development";
+CM_ BO_ 2364539904 "engine speed and torque";
+CM_ BO_ 2365554944 "various status";
+CM_ SG_ 2365554944 DLN_msg_config_version "��Version of DLN-messages Configuration�� must match 0xA1 for this specific format of message";
+CM_ BO_ 2566843904 "coolant temperature";
+CM_ BO_ 2364539395 "status";
+CM_ BO_ 2565866755 "gear status";
+CM_ SG_ 2565866755 TransmissionCurrentGear "Values 1 to 8 shows ��1F�� to ��8F��. Values -1 to -5 shows ��1R�� to ��5R��. Value 0 shows ��N��.";
+CM_ SG_ 2565866755 TransmissionSelectedGear "Values 1 to 8 shows ��1F�� to ��8F��. Values -1 to -5 shows ��1R�� to ��5R��. Value 0 shows ��N��.";
+CM_ BO_ 2566846467 "sump oil temperature";
+CM_ BO_ 2566847248 "retarder oil temperature";
+CM_ BO_ 2565865488 "actual retarder";
+CM_ BO_ 2566866179 "various status";
+CM_ SG_ 2566866179 TCHS "Transmission Converter Heat State";
+CM_ SG_ 2566866179 TRHS "Transmission Retarder Heat State";
+CM_ SG_ 2566866179 TSHS "Transmission Sump Heat State";
+CM_ SG_ 2566866179 TIOPS "Transmission In OverPower State";
+CM_ SG_ 2566866179 TMOTS "Transmission Motor OverTorque State";
+CM_ SG_ 2566866179 TOOTS "Transmission Out OverTorque State";
+CM_ SG_ 2566866179 TIOTS "Transmission In OverTorque State";
+CM_ SG_ 2566866179 TOOSS "Transmission Out Overspeed State";
+CM_ SG_ 2566866179 TIOSS "Transmission In Overspeed State";
+CM_ SG_ 2566866179 GEIS "Gear Engage Inhibit State";
+CM_ SG_ 2566866179 ROSPS "Retarder Overspeed Protection State";
+CM_ SG_ 2566866179 OHPS "Overheat Protection State";
+CM_ SG_ 2566866179 GHPS "Gear Hunting Protection State";
+CM_ SG_ 2566866179 RCSM "Retarder Cold Start Mode";
+CM_ SG_ 2566866179 TTLM "Transmission Temperature Limit Mode";
+BA_DEF_ BO_  "J1939FdTpADS" INT 0 52;
+BA_DEF_ BO_  "J1939FdTpADT" INT 0 255;
+BA_DEF_ BO_  "J1939PgAppearanceOnBus" ENUM  "Default","CAN_Extended","CANFD_Extended";
+BA_DEF_ BO_  "J1939CPgSendTimeout" INT -1 3600000;
+BA_DEF_ BO_  "J1939CPgTOS" INT 0 7;
+BA_DEF_ BO_  "J1939CPgTF" INT 0 7;
+BA_DEF_ BU_  "J1939MultiPgSendTimeout" INT 0 3600000;
+BA_DEF_ BU_  "J1939MultiPgSizeThreshold" INT 0 64;
+BA_DEF_ BU_  "J1939MultiPgBroadcastType" ENUM  "FBFF","FEFF";
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_ BO_  "FsJ1939UseCrcAndCounter" STRING ;
+BA_DEF_ BO_  "FsJ1939NeedsSHM" ENUM  "No","Yes";
+BA_DEF_ BO_  "FsJ1939Delay" INT 0 1000;
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "No","Yes";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_DEF_  "J1939FdTpADS" 0;
+BA_DEF_DEF_  "J1939FdTpADT" 0;
+BA_DEF_DEF_  "J1939PgAppearanceOnBus" "Default";
+BA_DEF_DEF_  "J1939CPgSendTimeout" -1;
+BA_DEF_DEF_  "J1939CPgTOS" 2;
+BA_DEF_DEF_  "J1939CPgTF" 0;
+BA_DEF_DEF_  "J1939MultiPgSendTimeout" 2;
+BA_DEF_DEF_  "J1939MultiPgSizeThreshold" 56;
+BA_DEF_DEF_  "J1939MultiPgBroadcastType" "FBFF";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "FsJ1939UseCrcAndCounter" "";
+BA_DEF_DEF_  "FsJ1939NeedsSHM" "No";
+BA_DEF_DEF_  "FsJ1939Delay" 0;
+BA_DEF_DEF_  "TpJ1939VarDlc" "No";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "BusType" "CAN";
+BA_ "DBName" "ADT1";
+BA_ "VFrameFormat" BO_ 2566897703 3;
+BA_ "VFrameFormat" BO_ 2566897959 3;
+BA_ "VFrameFormat" BO_ 2566899751 3;
+BA_ "VFrameFormat" BO_ 2566900007 3;
+BA_ "VFrameFormat" BO_ 2566901799 3;
+BA_ "VFrameFormat" BO_ 2566855467 3;
+BA_ "VFrameFormat" BO_ 2566855723 3;
+BA_ "VFrameFormat" BO_ 2566856491 3;
+BA_ "VFrameFormat" BO_ 2231316267 3;
+BA_ "VFrameFormat" BO_ 2566885419 3;
+BA_ "VFrameFormat" BO_ 2566885675 3;
+BA_ "VFrameFormat" BO_ 2566886187 3;
+BA_ "VFrameFormat" BO_ 2566860810 3;
+BA_ "VFrameFormat" BO_ 2364539904 3;
+BA_ "VFrameFormat" BO_ 2365554944 3;
+BA_ "VFrameFormat" BO_ 2566843904 3;
+BA_ "VFrameFormat" BO_ 2364539395 3;
+BA_ "VFrameFormat" BO_ 2565866755 3;
+BA_ "VFrameFormat" BO_ 2566846467 3;
+BA_ "VFrameFormat" BO_ 2566847248 3;
+BA_ "VFrameFormat" BO_ 2565865488 3;
+BA_ "VFrameFormat" BO_ 2566866179 3;
+VAL_ 2566897703 BodySensorState 0 "Body Down" 1 "Body Up" 2 "Error (timeout/missing RU3)" 3 "N/A" ;
+VAL_ 2566897703 SideAngleTipUpRestrictionAlarm 0 "No alarm" 1 "Tip up restricted" ;
+VAL_ 2566897703 VehicleSpeedWarning 0 "No warning" 1 "Amber warning" 2 "Red warning" ;
+VAL_ 2566897703 DifferentialLockStatus 0 "No differentials locked" 1 "Center locked" 2 "(Rear locked)" 3 "(Center+Rear locked)" 4 "(Front locked)" 5 "(Front+Center locked)" 6 "(Front+Rear locked)" 7 "(Front+Center+Rear locked)" ;
+VAL_ 2566897703 TransmissionGearState 0 "Lamp off (neutral)" 1 "Automatic mode Lamp on" 2 "Manual mode Lamp on" ;
+VAL_ 2566897703 ParkBrakeLamp 0 "Park Brake released" 1 "Park Brake on" ;
+VAL_ 2566897703 EngineBrakeLamp 0 "Engine Brake off" 1 "Engine Brake active" ;
+VAL_ 2566897703 RetarderLamp 0 "Retarder off" 1 "Retarder active" ;
+VAL_ 2566897959 VCUCONFIGLEVEL 1 "VCU3 - Gen 1 (DA30/DA45)" ;
+VAL_ 2566897959 WasherTankLevel 0 "Level ok (or not implemented)" 1 "Low level" ;
+VAL_ 2566897959 BodyStateLamp 0 "Off" 1 "Float (green)" 2 "No float/body down" 3 "Body up" 4 "Error (missing signal)" ;
+VAL_ 2566897959 EngineAirFilterClogged 0 "Ok" 1 "Red alarm" ;
+VAL_ 2566897959 LampFailure 0 "Off" 1 "Some lamp failure" ;
+VAL_ 2566897959 LubricationSystemLamp 0 "Off" 1 "Amber warning (Low level)" 2 "Red alarm (error)" ;
+VAL_ 2566897959 EngineCoolantLevelLamp 0 "Off" 1 "Red alarm" ;
+VAL_ 2566897959 GeneralFaultLamp 0 "Off" 1 "Amber warning" 2 "Red alarm" ;
+VAL_ 2566897959 HydraulicSystemLamp 0 "Off" 1 "Amber warning" 2 "Red alarm" ;
+VAL_ 2566897959 EmergencySteeringLamp 0 "Off" 1 "Amber warning" 2 "Red alarm" ;
+VAL_ 2566897959 BrakeFaultLamp 0 "Off" 1 "Amber warning" 2 "Red alarm" ;
+VAL_ 2566897959 RoofBeaconLight 0 "Off" 1 "On" ;
+VAL_ 2566897959 SeatBeltLamp 0 "Off" 1 "On" ;
+VAL_ 2566897959 RearMirrorArmWorkLights 0 "Off" 1 "On" ;
+VAL_ 2566897959 FrontMirrorArmWorkLights 0 "Off" 1 "On" ;
+VAL_ 2566897959 CabinRoofWorkLights 0 "Off" 1 "On" ;
+VAL_ 2566897959 DirectionLight 0 "Direction lights off" 1 "Direction Left on" 2 "Direction Right on" 3 "Direction Left+Right on (hazard light)" ;
+VAL_ 2566897959 ParkMainLightStatus 0 "Light off" 1 "Park light only" 2 "Main light on - Low beam" 6 "Main light on - High beam" ;
+VAL_ 2566897959 FuelLevel 254 "Signal over/under-range (ERR)" 255 "Not configured or system startup (N/A)" ;
+VAL_ 2566899751 CooldownTimer 0 "No action (nothing displayed)" 1 "Display cooldown screen with progress bar" ;
+VAL_ 2566900007 CalcLoadPressure 0 "Value N/A" ;
+VAL_ 2566900007 MaterialType 0 "Default" ;
+VAL_ 2566900007 LoadWeightLampStatus 0 "Normal" 1 "Amber warning" 2 "Red overload" ;
+VAL_ 2566901799 AccumulatorFirstChargeInProgress 0 "First charge is finished" 1 "First charge is in progress" ;
+VAL_ 2566901799 AccumulatorFirstChargeProgress 0 "Normal" 1 "Amber warning" 2 "Red overload" ;
+VAL_ 2566901799 CoolingFanDrive 255 "N/A (external CAN control)" ;
+VAL_ 2566855467 RU3SidewaysAngleUncal 65535 "N/A (timeout from RU3)" ;
+VAL_ 2566855467 RU3LongitudinalAngleUncal 65535 "N/A (timeout from RU3)" ;
+VAL_ 2566855467 RU3SidewaysAngle 65535 "N/A (timeout from RU3)" ;
+VAL_ 2566855467 RU3LongitudinalAngle 65535 "N/A (timeout from RU3)" ;
+VAL_ 2566855723 FU3SidewaysAngleUncal 65535 "N/A (timeout from FU3)" ;
+VAL_ 2566855723 FU3LongitudinalAngleUncal 65535 "N/A (timeout from FU3)" ;
+VAL_ 2566855723 FU3SidewaysAngle 65535 "N/A (timeout from FU3)" ;
+VAL_ 2566855723 FU3LongitudinalAngle 65535 "N/A (timeout from FU3)" ;
+VAL_ 2566856491 BodyAngle2 65535 "N/A (timeout from BU3 and/or RU3)" ;
+VAL_ 2566856491 BU3LongitudinalAngleUuncal 65535 "N/A (timeout from BU3)" ;
+VAL_ 2566856491 BodyAngleUncal 65535 "N/A (timeout from BU3 and/or RU3)" ;
+VAL_ 2566856491 BodyAngle 65535 "N/A (timeout from BU3 and/or RU3)" ;
+VAL_ 2231316267 DaylightSavingsTimeFlag 0 "Off" 1 "On" ;
+VAL_ 2231316267 UTCTime 4294967294 "Not updated yet" ;
+VAL_ 2566885419 AmbientTemperature 65535 "N/A" ;
+VAL_ 2566885419 CurrentActiveVehicleSpeedLimit 65535 "No limit" ;
+VAL_ 2566885419 SelectedVehicleSpeedLimitActive 0 "Not active" 1 "Active" ;
+VAL_ 2566885419 WheelSpinAlarmBuzzerActive 0 "No alarm (don't show)" 1 "Alarm active (show)" ;
+VAL_ 2566885419 SeatBeltAlarmActive 0 "No alarm (don't show)" 1 "Alarm active (show)" ;
+VAL_ 2566885419 CustomerBodyUpAlarmActive 0 "No alarm (don't show)" 1 "Alarm active (show)" ;
+VAL_ 2566885419 ParkBrakeOffNeutralNoBrakePedal 0 "No warning (don't show)" 1 "Warning active (show)" ;
+VAL_ 2566885419 TryDriveWithParkBrakeActive 0 "No warning (don't show)" 1 "Warning active (show)" ;
+VAL_ 2566885419 SuspensionPopupDisplay 0 "Auto mode (don't show)" 1 "Manual/transport mode (show)" ;
+VAL_ 2566885419 EngineAirFilterPressure 254 "Signal over/under-range (ERR)" 255 "Not configured or system startup (N/A)" ;
+VAL_ 2566885419 HydraulicTankLevel 254 "Signal over/under-range (ERR)" 255 "Not configured or system startup (N/A)" ;
+VAL_ 2566885675 VehicleStage 0 "TOTF S1" 1 "TOTF S2" ;
+VAL_ 2566885675 VehicleModel 0 "DA30 (can be both TOTF S1 and S2)" 1 "DA45 (exists only as TOTF S2)" 2 "Reserved" 3 "DA45-4x4 (exists only as TOTF S2)" ;
+VAL_ 2566885675 WDBSetting 0 "No active WDB cooling" 1 "Active WDB cooling" ;
+VAL_ 2566885675 WDBTankLevel 254 "Signal over/under-range (ERR)" 255 "Not configured or system startup (N/A)" ;
+VAL_ 2566885675 F4KeyInUseByVCU3Func 0 "Not used" 1 "In use" ;
+VAL_ 2566885675 F3KeyInUseByVCU3Func 0 "Not used" 1 "In use" ;
+VAL_ 2566885675 F2KeyInUseByVCU3Func 0 "Not used" 1 "In use" ;
+VAL_ 2566885675 F1KeyInUseByVCU3Func 0 "Not used" 1 "In use" ;
+VAL_ 2566885675 TryingToStartEngine 0 "Not show" 1 "Show info trying to start engine when in-gear" ;
+VAL_ 2566885675 ImmobilizerStatus 0 "No immobilizer function in use (unlocked)" 1 "Immobilizer deactivated (unlocked)" 2 "Immobilizer active (locked)" 3 "Immobilizer active and attempting to start engine" ;
+VAL_ 2566885675 ASDInfoFlag 0 "No ASD" 1 "Show ASD info in display" ;
+VAL_ 2566885675 ASDActivated 0 "No ASD" 1 "ASD active (sending engine stop)" ;
+VAL_ 2566885675 WaterInFuelSensor 0 "No water detected (ok)" 1 "Water detected (drain needed)" 2 "Short circuit" 3 "Open loop (missing sensor)" 7 "N/A (in startup or engine starting/low voltage)" ;
+VAL_ 2566886187 LaunchTorque 65535 "N/A" ;
+VAL_ 2566886187 HoldBrakePopupInfo 0 "No info" 1 "Info pop-up 1: Need engage foot brake to release Hold Brake" 2 "Info pop-up 2: Driveline torque needed to release Hold Brake" 3 "Reserved for future use" ;
+VAL_ 2566886187 HoldBrakeActivationStatus 0 "Hold Brake off (inactive)" 1 "Hold Brake active - Amber (normal active)" 2 "Hold Brake active - Red (engine stop while active)" 3 "Hold Brake active - Green (reserved for future use)" ;
+VAL_ 2566886187 TCbasedDrivelineTorque 65535 "N/A" ;
+VAL_ 2566886187 HoldBrakeAlarmByEngineStop 0 "Ok" 1 "Engine stopped (stalled) or missing CAN" ;
+VAL_ 2566886187 HoldBrakeMaxUphillAngleExceeded 0 "Ok" 1 "Maximum uphill angle too big for activation" ;
+VAL_ 2566886187 HoldBrakeMaxDownhillAngleExceed 0 "Ok" 1 "Maximum downhill angle too big for activation" ;
+VAL_ 2566886187 HoldBrakeAngleDiffTooBig 0 "Ok" 1 "Difference too big" ;
+VAL_ 2566886187 HoldBrakeMissingFU3 0 "Ok" 1 "Missing FU3" ;
+VAL_ 2566886187 HoldBrakeMissingRU3_4 0 "Ok" 1 "Missing RU3/RU4" ;
+VAL_ 2566886187 HoldBrakeActiveConditionValid 0 "Not valid" 1 "Valid" ;
+VAL_ 2566886187 DisplayLockoutCondition 0 "Not ok (locked)" 1 "Ok (no system fault or lockout)" ;
+VAL_ 2566886187 DisplayTemperatureCondition 0 "Not ok" 1 "Ok (engine and exhaust warm)" ;
+VAL_ 2566886187 DisplayIdleCond 0 "Not ok" 1 "Ok (engine idle, not touching accelerator pedal)" ;
+VAL_ 2566886187 DisplayNeutralCondition 0 "Not ok" 1 "Ok (driveline disengaged and in Neutral)" ;
+VAL_ 2566886187 DisplayParkBrakeEngagedCondition 0 "Not ok" 1 "Ok (park brake engaged)" ;
+VAL_ 2566886187 DPFManualRegenerationAvail 0 "No DPF system detected (Tier2-Tier4F)" 1 "DPF detected, no need for Regen, soot level too low" 2 "DPF detected, Regen not possible, soot level too high" 3 "DPF detected, no action possible, awaiting conditions" 4 "DPF detected, Start Manual Regen is allowed" 5 "DPF detected, Abort Regen is allowed" 6 "DPF detected, Manual Regen Completed" 7 "Not used" ;
+VAL_ 2566860810 DifferentialSpeedFactor 65535 "N/A (in startup after ignition on or not installed)" ;
+VAL_ 2566860810 RearAxleRotationalDirection 0 "Forward direction" 1 "Reverse direction" 2 "Error (sensor error)" 3 "N/A (sent on standstill)" ;
+VAL_ 2566860810 RearAxleSpeed 65024 "Speed sensor error" 65535 "N/A (in startup after ignition on or not installed)" ;
+VAL_ 2364539904 EngineSpeed 65024 "Error" 65280 "N/A" ;
+VAL_ 2365554944 Charge61 0 "Generator not charging" 1 "Generator Charging" 2 "Reserved" 3 "Don't care/Take no action" ;
+VAL_ 2365554944 LowEngineOilPressure 0 "Not Low Engine Oil Pressure" 1 "Low Engine Oil Pressure" 2 "Error" 3 "N/A" ;
+VAL_ 2566843904 EngineCoolantTemperature 254 "Error" 255 "N/A" ;
+VAL_ 2364539395 TMTorqueConverterLockupEngaged 0 "Torque converter lockup disengaged" 1 "Torque converter lockup engaged" 2 "Error" 3 "N/A" ;
+VAL_ 2565866755 TransmissionCurrentGear 125 "Neutral" 254 "Error" 255 "N/A" ;
+VAL_ 2565866755 TransmissionSelectedGear 125 "Neutral" 254 "Error" 255 "N/A" ;
+VAL_ 2566846467 TransmissionOilTemperature 65024 "Error" 65280 "N/A" ;
+VAL_ 2566847248 RetarderOilTemperature 254 "Error" 255 "N/A" ;
+VAL_ 2565865488 ActualRetarderPercentTorque 254 "Error" 255 "N/A" ;
+VAL_ 2566866179 TCHS 0 "Ok" 1 "Warning" 2 "Failure" 3 "N/A" ;
+VAL_ 2566866179 TRHS 0 "Ok" 1 "Warning" 2 "Failure" 3 "N/A" ;
+VAL_ 2566866179 TSHS 0 "Ok" 1 "Warning" 2 "Failure" 3 "N/A" ;
+VAL_ 2566866179 TIOPS 0 "Ok" 1 "Warning" 2 "Failure" 3 "N/A" ;
+VAL_ 2566866179 TMOTS 0 "Ok" 1 "Warning" 2 "Failure" 3 "N/A" ;
+VAL_ 2566866179 TOOTS 0 "Ok" 1 "Warning" 2 "Failure" 3 "N/A" ;
+VAL_ 2566866179 TIOTS 0 "Ok" 1 "Warning" 2 "Failure" 3 "N/A" ;
+VAL_ 2566866179 TOOSS 0 "Ok" 1 "Warning" 2 "Failure" 3 "N/A" ;
+VAL_ 2566866179 TIOSS 0 "Ok" 1 "Warning" 2 "Failure" 3 "N/A" ;
+VAL_ 2566866179 GEIS 0 "Not active" 1 "Active forward" 2 "Active reverse" 3 "Warning forward" 4 "Warning freverse" 5 "Warning forward and reverse" 6 "Active forward and reverse" 7 "N/A" ;
+VAL_ 2566866179 ROSPS 0 "Not active" 1 "Active" 2 "Reserved" 3 "N/A" ;
+VAL_ 2566866179 OHPS 0 "Not active" 1 "Active" 2 "Reserved" 3 "N/A" ;
+VAL_ 2566866179 GHPS 0 "Not active" 1 "Active" 2 "Pre-active" 3 "N/A" ;
+VAL_ 2566866179 RCSM 0 "Not active" 1 "Active" 2 "Conditions not correct" 3 "N/A" ;
+VAL_ 2566866179 TTLM 0 "No restriction" 1 "Cold start mode 1 (restricted dynamic / gear range)" 2 "Cold start mode 2 (no gear engaged, heating up necessary)" 3 "N/A" ;
+
+
+

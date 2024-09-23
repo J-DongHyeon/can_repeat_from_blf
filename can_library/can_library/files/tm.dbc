@@ -1,0 +1,281 @@
+VERSION ""
+
+
+NS_ :
+        NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+        BA_SGTYPE_
+        SIG_TYPE_REF_
+        VAL_TABLE_
+        SIG_GROUP_
+        SIG_VALTYPE_
+        SIGTYPE_VALTYPE_
+        BO_TX_BU_
+        BA_DEF_REL_
+        BA_REL_
+        BA_DEF_DEF_REL_
+        BU_SG_REL_
+        BU_EV_REL_
+        BU_BO_REL_
+
+BS_:
+
+BU_:
+VAL_TABLE_ Register_FOB 0 "Normal" 1 "Success" 2 "Failure" 3 "Lock" ;
+VAL_TABLE_ Detect_FOB 0 "Default" 1 "On" 2 "Off" 3 "Fail" ;
+VAL_TABLE_ Request_FOB_ID 0 "Default" 1 "On" 2 "Off" 3 "Fail" ;
+VAL_TABLE_ Door_Status 0 "Default" 1 "Lock" 2 "Unlock" ;
+VAL_TABLE_ Air_Conditioner_Status 0 "Default" 1 "On" 2 "Off" 3 "Fail" ;
+VAL_TABLE_ Machine_Status 0 "Default" 1 "EngineOn" 2 "EngineOff" 3 "KeyOn" ;
+VAL_TABLE_ Lamp_Status 0 "Default" 1 "On" 2 "Off" 3 "Fail" ;
+VAL_TABLE_ Door_Release 0 "Default" 3 "Fail" 2 "ReleaseOn" 3 "ReleaseOff" ;
+VAL_TABLE_ Door_Status 0 "Unlock" 1 "Lock" 2 "Release_Unlock" 3 "Release_Lock" ;
+VAL_TABLE_ Air_Conditioner_Status 0 "Default" 3 "Failed" 1 "On" 2 "Off" ;
+VAL_TABLE_ Lamp_Status 0 "Default" 3 "Failed" 1 "On" 2 "Off" ;
+VAL_TABLE_ Pre_Heating_Status 0 "Default" 3 "Failed" 1 "On" 2 "Off" ;
+VAL_TABLE_ FOB_Registration_Status_Feedback 0 "Default" 1 "NoDetect" 2 "Detected" 3 "NA" ;
+VAL_TABLE_ Warn_NoFob 0 "Normal" 1 "On" 2 "BlinkFast" 3 "BlinkSlow" ;
+VAL_TABLE_ Warn_LowBat 0 "Normal" 1 "On" 2 "BlinkFast" 3 "BlinkSlow" ;
+VAL_TABLE_ Warn_Immo 0 "Normal" 1 "On" 2 "BlinkFast" 3 "BlinkSlow" ;
+
+
+BO_ 2364539943 VCU_EEC1_T4F: 8 Vector__XXX
+ SG_ EngineSpeed : 24|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+ SG_ ActualEnginePercentTorque : 16|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ DriversDemandEnginePercentTorque : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+
+BO_ 2364539937 VCU_EEC1: 8 Vector__XXX
+ SG_ DriversDemandEnginePercentTorque : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ ActualEnginePercentTorque : 16|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ EngineSpeed : 24|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+
+BO_ 2364539904 ECU_EEC1: 8 Vector__XXX
+ SG_ EngineTorqueMode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ActualEnginePercentTorqueFract : 4|4@1+ (0.125,0) [0|0.875] "%" Vector__XXX
+ SG_ DriversDemandEnginePercentTorque : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ ActualEnginePercentTorque : 16|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ EngineSpeed : 24|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+ SG_ SrcAddrOfCtrllingDevForEngCtrl : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EngineStarterMode : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ EngineDemandPercentTorque : 56|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+
+BO_ 2566859523 TCU_TCU1: 8 Vector__XXX
+ SG_ FF1E_DrivelineStatus : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FF1E_ShiftStatus : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FF1E_OPMode : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ FF1E_JoystickMode : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FF1E_CurrentDirection : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FF1E_CurrentGear : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ FF1E_DifferentialLock : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FF1E_ShifterDirection : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FF1E_ShifterRange : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ FF1E_ErrorCode : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FF1E_OutputSpeed : 16|16@1+ (0.125,0) [0|8191.875] "rpm" Vector__XXX
+ SG_ FF1E_EngineSpeed : 0|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+
+BO_ 2566897959 VCU3_Proprietary_A1: 8 Vector__XXX
+ SG_ FuelLevel : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ VCUCONFIGLEVEL : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ WasherTankLevel : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BodyStateLamp : 40|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ EngineAirFilterClogged : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LampFailure : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LubricationSystemLamp : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EngineCoolantLevelLamp : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GeneralFaultLamp : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ HydraulicSystemLamp : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EmergencySteeringLamp : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BrakeFaultLamp : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RoofBeaconLight : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SeatBeltLamp : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RearMirrorArmWorkLights : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FrontMirrorArmWorkLights : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CabinRoofWorkLights : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DirectionLight : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ParkMainLightStatus : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2566903841 VCU_LASI: 136 Vector__XXX
+ SG_ FFD8_LS_PS : 224|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+ SG_ FFD8_TwoSpeedPS : 208|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+ SG_ FFD8_TiltBackPS : 128|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+ SG_ FFD8_EngineControlDial : 112|16@1+ (1,0) [0|65535] "V" Vector__XXX
+ SG_ FFD8_ACPsensorPressure : 544|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_ParkingBrakePress : 96|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+ SG_ FFD8_Joystick1Grip_YaxisPosi : 736|10@1+ (1,0) [0|1023] "" Vector__XXX
+ SG_ FFD8_Joystick1_YaxisPosi : 720|10@1+ (1,0) [0|1023] "" Vector__XXX
+ SG_ FFD8_Joystick1_XaxisPosi : 704|10@1+ (1,0) [0|1023] "" Vector__XXX
+ SG_ FFD8_CoolantTemp : 400|16@1+ (1,-40) [-40|210] "C" Vector__XXX
+ SG_ FFD8_TMS_Voltage : 768|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_EMCVLeverOption_B : 688|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_EMCVLeverOption_A : 672|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_EMCVLeverBucket_B : 656|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_EMCVLeverBucket_A : 640|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_EMCVLeverBoom_B : 624|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_EMCVLeverBoom_A : 608|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_ElecSteerValve : 592|16@1+ (1,0) [0|65535] "%" Vector__XXX
+ SG_ FFD8_WL_ElecSteerLever_B : 576|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_ElecSteerLever_A : 560|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_BatteryVoltage : 512|16@1+ (1,0) [0|40000] "" Vector__XXX
+ SG_ FFD8_AlternatorVoltage : 496|16@1+ (1,0) [0|40000] "" Vector__XXX
+ SG_ FFD8_WL_AxleOilTemp : 432|16@1+ (1,-40) [-40|210] "deg" Vector__XXX
+ SG_ FFD8_HydraulicTemp : 416|16@1+ (1,-40) [-40|210] "deg" Vector__XXX
+ SG_ FFD8_WIFSensorVoltage : 368|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_FuelLevel : 352|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_BrakePedal_B : 304|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_BrakePedal_A : 288|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_AccelPedalVoltage_Wheel : 272|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_AngleSensorBucket_B : 192|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_AngleSensorBucket_A : 176|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_AngleSensorBoom_B : 160|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_AngleSensorBoom_A : 144|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FFD8_WL_FanMotorPressure : 80|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+ SG_ FFD8_WL_BrakeOilPressure : 64|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+ SG_ FFD8_WL_SteerPressure : 48|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+ SG_ FFD8_WL_BoomRodPressure : 32|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+ SG_ FFD8_WL_BoomHeadPressure : 16|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+ SG_ FFD8_WL_MainPressure : 0|16@1+ (0.0625,0) [0|500] "bar" Vector__XXX
+
+BO_ 2566866209 VCU_GPG: 8 Vector__XXX
+ SG_ FF45_WeighingMeasureWeight : 48|16@1+ (1,-32127) [-32127|32127] "Kg" Vector__XXX
+ SG_ FF45_TransmissionOilTemp : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FF45_GaugeData_VehicleSpeed : 32|8@1+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ FF45_GaugeData_UreaLevel : 24|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ FF45_GaugeData_HydOilTemp : 8|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ FF45_GaugeData_FuelLevel : 16|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ FF45_GaugeData_CoolantTemp : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+
+BO_ 2566847511 ECU_DD: 8 Vector__XXX
+ SG_ WasherFluidLevel : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ FuelLevel1 : 8|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ EngineFuelFilterDiffPressure : 16|8@1+ (2,0) [0|500] "kPa" Vector__XXX
+ SG_ EngineOilFilterDiffPressure : 24|8@1+ (0.5,0) [0|125] "kPa" Vector__XXX
+ SG_ CargoAmbientTemperature : 32|16@1+ (0.03125,-273) [-273|1734.96875] "deg C" Vector__XXX
+ SG_ FuelLevel2 : 48|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 2181015040 PHM_HydraulicOil: 8 Vector__XXX
+ SG_ HydraulicOilQualityStatus : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HydraulicOilSensorStatus : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HydraulicOilDielecConstant60Deg : 32|16@1+ (0.00012207,0) [0|0] "" Vector__XXX
+ SG_ HydraulicOilViscousity60Deg : 16|16@1+ (0.015625,0) [0|0] "cSt" Vector__XXX
+ SG_ HydraulicOilTemperature : 0|16@1- (0.0315,0) [0|0] "degC" Vector__XXXgd
+
+BO_ 2566818849 VCU_AAI: 8 Vector__XXX
+ SG_ HydraulicOilTemperature : 0|10@1+ (1,-40) [-40|983] "deg C" Vector__XXX
+ SG_ AuxiliaryPressure1 : 16|8@1+ (16,0) [0|4000] "kPa" Vector__XXX
+ SG_ AuxiliaryPressure2 : 24|8@1+ (16,0) [0|4000] "kPa" Vector__XXX
+ SG_ AuxiliaryLevel : 32|16@1+ (0.1,0) [0|6425.5] "mm" Vector__XXX
+ SG_ RelativeHumidity : 48|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 2566843904 ECU_ET1: 8 Vector__XXX
+ SG_ EngineCoolantTemperature : 0|8@1+ (1,-40) [-40|210] "��C" Vector__XXX
+
+BO_ 2566844928 ECU_LFE1: 8 Vector__XXX
+ SG_ EngineFuelRate : 0|16@1+ (0.05,0) [0|3212.75] "l/h" Vector__XXX
+ SG_ EngineInstantaneousFuelEconomy : 16|16@1+ (0.001953125,0) [0|125.498046875] "km/l" Vector__XXX
+ SG_ EngineAverageFuelEconomy    : 32|16@1+ (0.001953125,0) [0|125.498046875] "km/l" Vector__XXX
+ SG_ EngineThrottleValve1Position1 : 48|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ EngineThrottleValve2Position : 56|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 2566904353 VCU_LDSI: 20 Vector__XXX
+ SG_ FFDA_OPS_SW : 110|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_HgiFlowK : 108|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_HgiFlowN : 106|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_DustIndicator : 104|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_FrontDoorSW : 102|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_ArmRestSW_LH : 100|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_ArmRestSW_RH : 98|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_3rdSpoolLeverSwitch : 96|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_BucketLeverSwutch : 94|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_QuickCouplerLockSwitch : 82|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_DownShiftSwitch : 80|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_TractionControlSwitch : 88|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_ReturnFilterSwitch : 84|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_HydraulicLockoutSwitch : 90|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_EngineOilPressureSwitch : 92|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_AirCleanerSwitch : 86|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_Preheat : 78|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_Joystick1_YaxisDetentPosi : 76|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_Joystick1_XaxisDetentPosi : 74|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_HSTOilFilterWarning : 70|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_GearboxOverTemp : 68|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_AppKickDownSwt : 72|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_AGSSW : 66|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_QuickCouperSw : 64|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_ParkingSW : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_SeatBeltSW : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_ReDefrstSW : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_HornSW : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_2ndFNRActiveSW : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_RearWiperStopSignal : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_FrontWiiperStopSignal : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_DPFForcedRegenSW : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_EmergencySteerPressureSW : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_MainSteerPressureSW : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_KickDownSW : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_AccelPedalIVS : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_ParkingBrakePressureSW : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_CoolantLevel : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_WeighingCountSW : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_EMERGENCYstopSW : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_DHLmanualSW : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_3stFNR_R : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_3stFNR_N : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_3stFNR_F : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_2stFNR_R : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_2stFNR_N : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_2stFNR_F : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_1stFNR_R : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_1stFNR_N : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_1stFNR_F : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_BrSW_Starter : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_ACCSW_Starter : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_CSW_Starter : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_PilotCutoffSW : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_ArmRestCutoffSW : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FFDA_ElecSteerselect : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2566844160 ECU_EFL_P1: 8 Vector__XXX
+ SG_ EngineFuelDeliveryPressure : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ EngExtendedCrankCsBlowByPressure : 8|8@1+ (0.05,0) [0|12.5] "kPa" Vector__XXX
+ SG_ EngineOilLevel : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ EngineOilPressure : 24|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ EngineCrankcasePressure1 : 32|16@1+ (0.0078125,-250) [-250|261.9921875] "kPa" Vector__XXX
+ SG_ EngineCoolantPressure : 48|8@1+ (2,0) [0|500] "kPa" Vector__XXX
+ SG_ EngineCoolantLevel1 : 56|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 2566841600 ECU_HOURS: 8 Vector__XXX
+ SG_ EngineTotalHoursOfOperation : 0|32@1+ (0.05,0) [0|210554060.75] "hr" Vector__XXX
+ SG_ EngineTotalRevolutions : 32|32@1+ (1000,0) [0|4211081215000] "" Vector__XXX
+
+BO_ 2181014528 PHM_Time: 8 Vector__XXX
+ SG_ TimeStamp : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ EngineTotalHoursOfOperation : 0|32@1+ (0.05,0) [0|210554060.75] "hr" Vector__XXX
+
+BO_ 2566842624 ECU_LFC: 8 Vector__XXX
+ SG_ EngineTripFuel : 0|32@1+ (0.5,0) [0|2105540607.5] "l" Vector__XXX
+ SG_ EngineTotalFuelUsed : 32|32@1+ (0.5,0) [0|2105540607.5] "l" Vector__XXX
+
+BO_ 2566719744 ECU_HRLFC: 8 Vector__XXX
+ SG_ EngineTripFuel : 0|32@1+ (0.001,0) [0|4211081.215] "l" Vector__XXX
+ SG_ EngineTotalFuelUsed : 32|32@1+ (0.001,0) [0|4211081.215] "l" Vector__XXX
+
+BO_ 2566791424 ECU_LFC1_EDC7: 8 Vector__XXX
+ SG_ FE21_EngineTotalFuelUsed : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ FE21_EngineTripFuel : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ 
+
+BA_DEF_ SG_  "SignalType" STRING ;
+BA_DEF_DEF_  "SignalType" "";
+

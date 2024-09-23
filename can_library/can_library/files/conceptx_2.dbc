@@ -1,0 +1,113 @@
+VERSION ""
+
+
+NS_ :
+        NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+        BA_SGTYPE_
+        SIG_TYPE_REF_
+        VAL_TABLE_
+        SIG_GROUP_
+        SIG_VALTYPE_
+        SIGTYPE_VALTYPE_
+        BO_TX_BU_
+        BA_DEF_REL_
+        BA_REL_
+        BA_DEF_DEF_REL_
+        BU_SG_REL_
+        BU_EV_REL_
+        BU_BO_REL_
+
+BS_:
+
+BU_:
+VAL_TABLE_ Register_FOB 0 "Normal" 1 "Success" 2 "Failure" 3 "Lock" ;
+VAL_TABLE_ Detect_FOB 0 "Default" 1 "On" 2 "Off" 3 "Fail" ;
+VAL_TABLE_ Request_FOB_ID 0 "Default" 1 "On" 2 "Off" 3 "Fail" ;
+VAL_TABLE_ Door_Status 0 "Default" 1 "Lock" 2 "Unlock" ;
+VAL_TABLE_ Air_Conditioner_Status 0 "Default" 1 "On" 2 "Off" 3 "Fail" ;
+VAL_TABLE_ Machine_Status 0 "Default" 1 "EngineOn" 2 "EngineOff" 3 "KeyOn" ;
+VAL_TABLE_ Lamp_Status 0 "Default" 1 "On" 2 "Off" 3 "Fail" ;
+VAL_TABLE_ Door_Release 0 "Default" 3 "Fail" 2 "ReleaseOn" 3 "ReleaseOff" ;
+VAL_TABLE_ Door_Status 0 "Unlock" 1 "Lock" 2 "Release_Unlock" 3 "Release_Lock" ;
+VAL_TABLE_ Air_Conditioner_Status 0 "Default" 3 "Failed" 1 "On" 2 "Off" ;
+VAL_TABLE_ Lamp_Status 0 "Default" 3 "Failed" 1 "On" 2 "Off" ;
+VAL_TABLE_ Pre_Heating_Status 0 "Default" 3 "Failed" 1 "On" 2 "Off" ;
+VAL_TABLE_ FOB_Registration_Status_Feedback 0 "Default" 1 "NoDetect" 2 "Detected" 3 "NA" ;
+VAL_TABLE_ Warn_NoFob 0 "Normal" 1 "On" 2 "BlinkFast" 3 "BlinkSlow" ;
+VAL_TABLE_ Warn_LowBat 0 "Normal" 1 "On" 2 "BlinkFast" 3 "BlinkSlow" ;
+VAL_TABLE_ Warn_Immo 0 "Normal" 1 "On" 2 "BlinkFast" 3 "BlinkSlow" ;
+
+BO_ 2566842624 ECU_LFC: 8 Vector__XXX
+ SG_ EngineTripFuel : 0|32@1+ (0.5,0) [0|2105540607.5] "l" Vector__XXX
+ SG_ EngineTotalFuelUsed : 32|32@1+ (0.5,0) [0|2105540607.5] "l" Vector__XXX
+
+BO_ 2566719744 ECU_HRLFC: 8 Vector__XXX
+ SG_ EngineTripFuel : 0|32@1+ (0.001,0) [0|4211081.215] "l" Vector__XXX
+ SG_ EngineTotalFuelUsed : 32|32@1+ (0.001,0) [0|4211081.215] "l" Vector__XXX
+
+BO_ 2364539943 VCU_EEC1_T4F: 8 Vector__XXX
+ SG_ EngineSpeed : 24|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+ SG_ ActualEnginePercentTorque : 16|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ DriversDemandEnginePercentTorque : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+
+BO_ 2364539937 VCU_EEC1: 8 Vector__XXX
+ SG_ DriversDemandEnginePercentTorque : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ ActualEnginePercentTorque : 16|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ EngineSpeed : 24|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+
+BO_ 2364539904 ECU_EEC1: 8 Vector__XXX
+ SG_ EngineTorqueMode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ActualEnginePercentTorqueFract : 4|4@1+ (0.125,0) [0|0.875] "%" Vector__XXX
+ SG_ DriversDemandEnginePercentTorque : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ ActualEnginePercentTorque : 16|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ EngineSpeed : 24|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+ SG_ SrcAddrOfCtrllingDevForEngCtrl : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EngineStarterMode : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ EngineDemandPercentTorque : 56|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+
+BO_ 2566841600 ECU_HOURS: 8 Vector__XXX
+ SG_ EngineTotalHoursOfOperation : 0|32@1+ (0.05,0) [0|210554060.75] "hr" Vector__XXX
+ SG_ EngineTotalRevolutions : 32|32@1+ (1000,0) [0|4211081215000] "" Vector__XXX
+
+BO_ 2566844928 ECU_LFE1: 8 Vector__XXX
+ SG_ EngineFuelRate : 0|16@1+ (0.05,0) [0|3212.75] "l/h" Vector__XXX
+ SG_ EngineInstantaneousFuelEconomy : 16|16@1+ (0.001953125,0) [0|125.498046875] "km/l" Vector__XXX
+ SG_ EngineAverageFuelEconomy : 32|16@1+ (0.001953125,0) [0|125.498046875] "km/l" Vector__XXX
+ SG_ EngineThrottleValve1Position1 : 48|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ EngineThrottleValve2Position : 56|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 2566839296 ECU_IO: 8 Vector__XXX
+ SG_ EngineTotalIdleFuelUsed : 0|32@1+ (0.5,0) [0|2105540607.5] "l" Vector__XXX
+ SG_ EngineTotalIdleHours : 32|32@1+ (0.05,0) [0|210554060.75] "hr" Vector__XXX
+
+BA_DEF_ SG_  "SignalType" STRING ;
+BA_DEF_DEF_  "SignalType" "";
+BA_ "SignalType" SG_ 2566894154 Register_FOB "ENM";
+BA_ "SignalType" SG_ 2566894154 Detect_FOB "ENM";
+BA_ "SignalType" SG_ 2566894154 Request_FOB_ID "ENM";
+BA_ "SignalType" SG_ 2566894154 Door_Status "ENM";
+BA_ "SignalType" SG_ 2566894154 Air_Conditioner_Status "ENM";
+BA_ "SignalType" SG_ 2566894154 Machine_Status "ENM";
+BA_ "SignalType" SG_ 2566894154 Lamp_Status "ENM";
+BA_ "SignalType" SG_ 2566894154 Door_Release "ENM";
+BA_ "SignalType" SG_ 2566893620 Door_Status "ENM";
+BA_ "SignalType" SG_ 2566893620 Air_Conditioner_Status "ENM";
+BA_ "SignalType" SG_ 2566893620 Lamp_Status "ENM";
+BA_ "SignalType" SG_ 2566893620 Pre_Heating_Status "ENM";
+BA_ "SignalType" SG_ 2566893620 FOB_Registration_Status_Feedback "ENM";
+BA_ "SignalType" SG_ 2566893620 Warn_NoFob "ENM";
+BA_ "SignalType" SG_ 2566893620 Warn_LowBat "ENM";
+BA_ "SignalType" SG_ 2566893620 Warn_Immo "ENM";

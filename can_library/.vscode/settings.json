@@ -1,0 +1,23 @@
+{
+  "editor.defaultFormatter": "zachflower.uncrustify",
+  "uncrustify.configPath.linux": "/home/aiden/style_ws/vscode_cpp_format/mw-coding-convention/mw_code_style.cfg",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "licenser.license": "AL2",
+  "licenser.author": "CLOBOT Co., Ltd",
+
+  "python.autoComplete.extraPaths": [
+    "/home/aiden/build_test/install/can_bridge/lib/python3.10/site-packages",
+    "/home/aiden/build_test/install/can_ros_interfaces/local/lib/python3.10/dist-packages",
+    "/home/aiden/build_test/install/can_library/lib/python3.10/site-packages",
+    "/opt/ros/humble/lib/python3.10/site-packages",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages"
+  ],
+  "python.analysis.extraPaths": [
+    "/home/aiden/build_test/install/can_bridge/lib/python3.10/site-packages",
+    "/home/aiden/build_test/install/can_ros_interfaces/local/lib/python3.10/dist-packages",
+    "/home/aiden/build_test/install/can_library/lib/python3.10/site-packages",
+    "/opt/ros/humble/lib/python3.10/site-packages",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages"
+  ]
+}

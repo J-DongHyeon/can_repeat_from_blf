@@ -1,0 +1,275 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: 
+
+
+BO_ 2298414344 VCU3_Proprietary_RCH: 8 Vector__XXX
+ SG_ CRC16 : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ PatternMatchByte5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PatternMatchByte4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PatternMatchByte3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PatternMatchByte2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PatternMatchByte1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Command : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2298414600 VCU3_Proprietary_RCC1: 8 Vector__XXX
+ SG_ CRC16 : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ EngineShutdownRequest : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ StarterMotorRequest : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HoldBrakeSwitch : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkBrakeSwitch : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SteeringFlowRequest : 32|10@1+ (0.1,0) [0|100] "%" Vector__XXX
+ SG_ BrakePedalPosition : 24|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ GearSelectorSwitchButton : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearSelectorSwitchMinus : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearSelectorSwitchPlus : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearSelectorSwitchReverse : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearSelectorSwitchNeutral : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearSelectorSwitchForward : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AcceleratorPedalPosition : 8|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ MessageCounter : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageVersion : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2298414856 VCU3_Proprietary_RCC2: 8 Vector__XXX
+ SG_ CRC16 : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ KeypadKeyPresses24_31 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ KeypadKeyPresses16_23 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ KeypadKeyPresses8_15 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ KeypadKeyPresses0_7 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MessageCounter : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageVersion : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2298415112 VCU3_Proprietary_RCC3: 8 Vector__XXX
+ SG_ CRC16 : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ RCVehicleSpeedLimit : 32|8@1+ (0.5,0) [0|125] "km/h" Vector__XXX
+ SG_ RCVehicleSpeedLimitMode : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RColumnSwitchRetarderSelection : 25|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ TipJoystickButton : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TipJoystickPosition : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ LColumnSwitchHorn : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LColumnSwitchDirectionLight : 13|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ LColumnSwitchVerticalHandlePos : 11|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ LColumnSwitchWindscreenWasher : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LColumnSwitchWindscreenWiper : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MessageCounter : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageVersion : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2298454059 VCU3_Proprietary_RCM1: 8 Vector__XXX
+ SG_ CRC16 : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ CommandedBrakePedalPosition : 40|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ CabinPhysicalIgnitionKeyState : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CabinDoorState : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CabinAlarmBuzzer : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TipJoystickMagneticHold : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ArticulationHingeSteerAnglePos : 24|11@1+ (0.1,-10) [-10|110] "%" Vector__XXX
+ SG_ eWheelFrictionTorque : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ ManualHandoverCriteria : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RCHandoverCriteria : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ValidDataReceived : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ UnstableCommDetailStatus : 11|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RemoteControlStatus : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MessageCounter : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageVersion : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+
+
+
+CM_ BO_ 2298414344 "Remote control handover";
+CM_ SG_ 2298414344 CRC16 "[A]";
+CM_ BO_ 2298414600 "Remote control command 1 (Version #1)";
+CM_ SG_ 2298414600 CRC16 "[A]";
+CM_ SG_ 2298414600 SteeringFlowRequest "0%=Full flow left, 50%=Blocked, 100%=Full flow right";
+CM_ SG_ 2298414600 BrakePedalPosition "Modulates 0-115 bar circuit pressure";
+CM_ SG_ 2298414600 GearSelectorSwitchButton "[C]";
+CM_ SG_ 2298414600 GearSelectorSwitchMinus "[C]";
+CM_ SG_ 2298414600 GearSelectorSwitchPlus "[C]";
+CM_ SG_ 2298414600 GearSelectorSwitchReverse "[C]";
+CM_ SG_ 2298414600 GearSelectorSwitchNeutral "[C]";
+CM_ SG_ 2298414600 GearSelectorSwitchForward "[C]";
+CM_ SG_ 2298414600 AcceleratorPedalPosition "0%=Idle";
+CM_ BO_ 2298414856 "Remote control command 2 (Version #1)";
+CM_ SG_ 2298414856 CRC16 "[A]";
+CM_ SG_ 2298414856 KeypadKeyPresses24_31 "[D]";
+CM_ SG_ 2298414856 KeypadKeyPresses16_23 "[D]";
+CM_ SG_ 2298414856 KeypadKeyPresses8_15 "[D]";
+CM_ SG_ 2298414856 KeypadKeyPresses0_7 "[D]";
+CM_ BO_ 2298415112 "Remote control command 3 (Version #1)";
+CM_ SG_ 2298415112 CRC16 "[A]";
+CM_ SG_ 2298415112 RCVehicleSpeedLimit "Usable range 2.0 – 55.0 km/h";
+CM_ SG_ 2298415112 TipJoystickPosition "0%=Full flow down, 50%=Blocked (joystick center), 100%=Full flow up";
+CM_ BO_ 2298454059 "Remote control monitoring 1 (Version #1)";
+CM_ SG_ 2298454059 CRC16 "[A]";
+CM_ SG_ 2298454059 MessageVersion "not defined when state = 1-15";
+BA_DEF_ BO_  "J1939FdTpADS" INT 0 52;
+BA_DEF_ BO_  "J1939FdTpADT" INT 0 255;
+BA_DEF_ BO_  "J1939PgAppearanceOnBus" ENUM  "Default","CAN_Extended","CANFD_Extended";
+BA_DEF_ BO_  "J1939CPgSendTimeout" INT -1 3600000;
+BA_DEF_ BO_  "J1939CPgTOS" INT 0 7;
+BA_DEF_ BO_  "J1939CPgTF" INT 0 7;
+BA_DEF_ BU_  "J1939MultiPgSendTimeout" INT 0 3600000;
+BA_DEF_ BU_  "J1939MultiPgSizeThreshold" INT 0 64;
+BA_DEF_ BU_  "J1939MultiPgBroadcastType" ENUM  "FBFF","FEFF";
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_ BO_  "FsJ1939UseCrcAndCounter" STRING ;
+BA_DEF_ BO_  "FsJ1939NeedsSHM" ENUM  "No","Yes";
+BA_DEF_ BO_  "FsJ1939Delay" INT 0 1000;
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "No","Yes";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_DEF_  "J1939FdTpADS" 0;
+BA_DEF_DEF_  "J1939FdTpADT" 0;
+BA_DEF_DEF_  "J1939PgAppearanceOnBus" "Default";
+BA_DEF_DEF_  "J1939CPgSendTimeout" -1;
+BA_DEF_DEF_  "J1939CPgTOS" 2;
+BA_DEF_DEF_  "J1939CPgTF" 0;
+BA_DEF_DEF_  "J1939MultiPgSendTimeout" 2;
+BA_DEF_DEF_  "J1939MultiPgSizeThreshold" 56;
+BA_DEF_DEF_  "J1939MultiPgBroadcastType" "FBFF";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "FsJ1939UseCrcAndCounter" "";
+BA_DEF_DEF_  "FsJ1939NeedsSHM" "No";
+BA_DEF_DEF_  "FsJ1939Delay" 0;
+BA_DEF_DEF_  "TpJ1939VarDlc" "No";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "BusType" "CAN";
+BA_ "DBName" "ADT1";
+BA_ "VFrameFormat" BO_ 2298414344 3;
+BA_ "VFrameFormat" BO_ 2298414600 3;
+BA_ "VFrameFormat" BO_ 2298414856 3;
+BA_ "VFrameFormat" BO_ 2298415112 3;
+BA_ "VFrameFormat" BO_ 2298454059 3;
+VAL_ 2298414344 Command 0 "No action (turn on/keep on ignition) " 1 "Initialize RC handover" 2 "Request RC handover" 3 "Initialize Manual handover" 4 "Request Manual handover" 5 "(ignored)" ;
+VAL_ 2298414600 EngineShutdownRequest 0 "No action" 1 "Request engine shutdown" ;
+VAL_ 2298414600 StarterMotorRequest 0 "No action" 1 "Request run starter motor" ;
+VAL_ 2298414600 HoldBrakeSwitch 0 "No action" 1 "Pressed" ;
+VAL_ 2298414600 ParkBrakeSwitch 0 "Engaged (Park)" 1 "Released (free to move)" ;
+VAL_ 2298414600 SteeringFlowRequest 1001 "(Invalid values)" 1022 "Error" 1023 "N/A" ;
+VAL_ 2298414600 BrakePedalPosition 251 "(Invalid values)" 254 "Error" 255 "N/A" ;
+VAL_ 2298414600 GearSelectorSwitchButton 0 "Off" 1 "On" ;
+VAL_ 2298414600 GearSelectorSwitchMinus 0 "Off" 1 "On" ;
+VAL_ 2298414600 GearSelectorSwitchPlus 0 "Off" 1 "On" ;
+VAL_ 2298414600 GearSelectorSwitchReverse 0 "Off" 1 "On" ;
+VAL_ 2298414600 GearSelectorSwitchNeutral 0 "Off" 1 "On" ;
+VAL_ 2298414600 GearSelectorSwitchForward 0 "Off" 1 "On" ;
+VAL_ 2298414600 AcceleratorPedalPosition 251 "(Invalid values)" 254 "Error" 255 "N/A" ;
+VAL_ 2298414600 MessageVersion 0 "Version #1 of message" 1 "(not defined)" ;
+VAL_ 2298414856 MessageVersion 0 "Version #1 of message" 1 "(not defined)" ;
+VAL_ 2298415112 RCVehicleSpeedLimit 251 "(Invalid values)" 254 "Error" 255 "N/A (no action, no speed limit)" ;
+VAL_ 2298415112 RCVehicleSpeedLimitMode 0 "Speed limit without auto retarder on Limit+2km/h" 1 "Speed limit with auto retarder on Limit+2km/h" ;
+VAL_ 2298415112 RColumnSwitchRetarderSelection 0 "None (center)" 1 "Plus" 2 "Minus" ;
+VAL_ 2298415112 TipJoystickButton 0 "No action" 1 "Pressed" ;
+VAL_ 2298415112 TipJoystickPosition 251 "(Invalid values)" 254 "Error" 255 "N/A" ;
+VAL_ 2298415112 LColumnSwitchHorn 0 "Off" 1 "Activate horn" ;
+VAL_ 2298415112 LColumnSwitchDirectionLight 0 "Off (center)" 1 "Left" 2 "Right" ;
+VAL_ 2298415112 LColumnSwitchVerticalHandlePos 0 "Down" 1 "Center (normal)" 2 "Up (toggle H/L beam)" ;
+VAL_ 2298415112 LColumnSwitchWindscreenWasher 0 "Off" 1 "Run washer pump" ;
+VAL_ 2298415112 LColumnSwitchWindscreenWiper 0 "Off" 1 "Interval" 2 "Normal speed run" 3 "High speed run" ;
+VAL_ 2298415112 MessageVersion 0 "Version #1 of message" 1 "(not defined)" ;
+VAL_ 2298454059 CommandedBrakePedalPosition 254 "Error" 255 "N/A" ;
+VAL_ 2298454059 CabinPhysicalIgnitionKeyState 0 "Off" 1 "On" ;
+VAL_ 2298454059 CabinDoorState 0 "Closed" 1 "Open" ;
+VAL_ 2298454059 CabinAlarmBuzzer 0 "Off" 1 "On" ;
+VAL_ 2298454059 TipJoystickMagneticHold 0 "Off" 1 "On (Hold)" ;
+VAL_ 2298454059 ArticulationHingeSteerAnglePos 1201 "(Invalid values)" 2042 "Under-range error (less than -10%)" 2043 "Over-range error (greater than 110%)" 2044 "Calibration error (missing calibration)" 2045 "Sensor CW+CCW sum error" 2046 "Internal sensor error" 2047 "N/A in startup or missing on CAN (timeout)" ;
+VAL_ 2298454059 eWheelFrictionTorque 251 "(Invalid values)" ;
+VAL_ 2298454059 ManualHandoverCriteria 0 "Not matching" 1 "Criteria is matching" ;
+VAL_ 2298454059 RCHandoverCriteria 0 "Not matching" 1 "Criteria is matching" ;
+VAL_ 2298454059 ValidDataReceived 0 "Data not valid" 1 "Valid data received in RCC1-3 messages" ;
+VAL_ 2298454059 UnstableCommDetailStatus 0 "" 1 "One retransmission detected (in one or more RCC messages)" 2 "Missing one packet in sequence (in one or more RCC messages)" 3 "Both retransmission and missing one packet detected" ;
+VAL_ 2298454059 RemoteControlStatus 0 "Manual mode" 1 "RC mode – Normal" 2 "RC mode – Unstable communication" 3 "RC mode – Emergency stop sequence started" 4 "RC mode – Emergency stop sequence finished" 5 "(not defined)" ;
+VAL_ 2298454059 MessageVersion 0 "Version #1 of message" 1 "(not defined)" ;
+
+
+

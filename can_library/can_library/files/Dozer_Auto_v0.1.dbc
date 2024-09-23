@@ -1,0 +1,362 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ ForcedJoyModeRslt : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TrvlRiStroke : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TrvlLeStroke : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ SwgStroke : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BktStroke : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ArmStroke : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BmStroke : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ PostSwAngVelCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ PostSwAngCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+ SG_ PostBkAngVelCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ PostBkAngCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+ SG_ PostAmAngVelCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ PostAmAngCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+ SG_ PostBmAngVelCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ PostBmAngCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+ SG_ PostSwAngVelFin : 0|16@1+ (0.01,-300) [-300|355.35] "deg/s" Vector__XXX
+ SG_ PostBkAngVelFin : 0|16@1+ (0.01,-300) [-300|355.35] "deg/s" Vector__XXX
+ SG_ PostAmAngVelFin : 0|16@1+ (0.01,-300) [-300|355.35] "deg/s" Vector__XXX
+ SG_ PostBmAngVelFin : 0|16@1+ (0.01,-300) [-300|355.35] "deg/s" Vector__XXX
+ SG_ PostSwAngVelFb : 0|16@1+ (0.01,-300) [-300|355.35] "deg/s" Vector__XXX
+ SG_ PostBkAngVelFb : 0|16@1+ (0.01,-300) [-300|355.35] "deg/s" Vector__XXX
+ SG_ PostAmAngVelFb : 0|16@1+ (0.01,-300) [-300|355.35] "deg/s" Vector__XXX
+ SG_ PostBmAngVelFb : 0|16@1+ (0.01,-300) [-300|355.35] "deg/s" Vector__XXX
+
+BO_ 2365522544 AutoManualModeSwitch: 8 Vector__XXX
+ SG_ ModeSwitchInfo : 0|8@1+ (1,0) [0|9] "" Vector__XXX
+
+BO_ 2365522290 EStopInfo: 8 Vector__XXX
+ SG_ HazardLevel : 0|8@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2566903408 WeighingData: 8 Vector__XXX
+ SG_ WeightStatus : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BkCount : 16|8@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ BkWeight : 0|16@1+ (0.01,0) [0|0] "Ton" Vector__XXX
+
+BO_ 2566903152 GpsStatus: 8 Vector__XXX
+ SG_ Status : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SVs : 0|8@1+ (1,0) [0|252] "" Vector__XXX
+
+BO_ 2566902896 GpsFixInfor: 8 Vector__XXX
+ SG_ VDOP : 32|16@1- (0.01,0) [-327.64|327.64] "" Vector__XXX
+ SG_ HDOP : 16|16@1- (0.01,0) [-327.64|327.64] "" Vector__XXX
+ SG_ PDOP : 0|16@1- (0.01,0) [-327.64|327.64] "" Vector__XXX
+
+BO_ 2566902640 GpsFixAltiHd: 8 Vector__XXX
+ SG_ Track : 32|32@1- (0.01,0) [-180|180] "deg" Vector__XXX
+ SG_ Altitude : 0|32@1- (0.001,0) [0|0] "m" Vector__XXX
+
+BO_ 2566902384 GpsFixLatiLongi: 8 Vector__XXX
+ SG_ Longitude : 32|32@1- (1E-007,0) [-180|180] "deg" Vector__XXX
+ SG_ Latitude : 0|32@1- (1E-007,0) [-90|90] "deg" Vector__XXX
+
+BO_ 2566902128 DiagcStsGnss: 8 Vector__XXX
+ SG_ GnssMethod : 2|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ GnssSerial : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GnssCan : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566901872 DiagcStsImuSwSnsr: 8 Vector__XXX
+ SG_ MabxStatus : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SwSensorStatus : 4|4@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ ImuBdStatus : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ImuBkStatus : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ImuAmStatus : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ImuBmStatus : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2365568626 McpUsrModeEna: 8 Vector__XXX
+ SG_ McpAliveCount : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TrvlModeEna : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MABXAutoModeEna : 0|8@1+ (1,0) [0|2] "" Vector__XXX
+
+BO_ 2365568625 TpUsrModeEna: 8 Vector__XXX
+ SG_ AgModeEna : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TrajModeEna : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MABXAutoModeEna : 0|8@1+ (1,0) [0|2] "" Vector__XXX
+
+BO_ 2365565552 BodySwPos: 8 Vector__XXX
+ SG_ SwAngVelUnwrap : 48|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ SwAngUnwrap : 32|16@1+ (0.1,-3000) [-3000|3553.5] "��" Vector__XXX
+ SG_ SwAngVel : 16|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ SwAng : 0|16@1+ (0.1,-3000) [-3000|3553.5] "��" Vector__XXX
+
+BO_ 2365568880 UsrModeRslt: 8 Vector__XXX
+ SG_ McpStatusRslt : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AgModeRslt : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TrajModeRslt : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TrvlModeRslt : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MABXAutoModeRslt : 0|8@1+ (1,0) [0|2] "" Vector__XXX
+
+BO_ 2365571697 AgInit: 8 Vector__XXX
+ SG_ AgSlopeAng : 48|16@1- (0.01,-300) [-300|355.35] "��" Vector__XXX
+ SG_ AgBkTipZ0 : 32|16@1- (0.01,-300) [-300|355.35] "m" Vector__XXX
+ SG_ AgBkTipY0 : 16|16@1- (0.01,-300) [-300|355.35] "m" Vector__XXX
+ SG_ AgBkTipX0 : 0|16@1- (0.01,-300) [-300|355.35] "m" Vector__XXX
+
+BO_ 2365568114 TrajVrtlCmdT: 8 Vector__XXX
+ SG_ TrajVrtlCmdLR : 16|16@1- (1,-1000) [-1000|1000] "" Vector__XXX
+ SG_ TrajVrtlCmdFR : 0|16@1- (1,-1000) [-1000|1000] "" Vector__XXX
+
+BO_ 2365562992 MachStatus: 8 Vector__XXX
+ SG_ TrStatus : 8|8@1- (1,0) [-4|4] "" Vector__XXX
+ SG_ SwStatus : 0|8@1- (1,0) [-1|1] "" Vector__XXX
+
+BO_ 2365565296 MachVel: 8 Vector__XXX
+ SG_ MachVelX : 48|16@1- (0.001,0) [-32.768|32.767] "m/s" Vector__XXX
+ SG_ MachVelUp : 32|16@1- (0.001,0) [-32.768|32.767] "m/s" Vector__XXX
+ SG_ MachVelNorth : 16|16@1- (0.001,0) [-32.768|32.767] "m/s" Vector__XXX
+ SG_ MachVelEast : 0|16@1- (0.001,0) [-32.768|32.767] "m/s" Vector__XXX
+
+BO_ 2365564784 MachPosY: 8 Vector__XXX
+ SG_ MachPosNorth : 0|64@1- (0.001,0) [-9.22337203685478E+015|9.22337203685478E+015] "m" Vector__XXX
+
+BO_ 2365564272 BodyHdYwPos: 8 Vector__XXX
+ SG_ YwAngleVel : 48|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ YwAngle : 32|16@1+ (0.1,-3000) [-3000|3553.5] "��" Vector__XXX
+ SG_ HdAngVel : 16|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ HdAng : 0|16@1+ (0.1,-3000) [-3000|3553.5] "��" Vector__XXX
+
+BO_ 2365567601 TrajVrtlCmdL: 8 Vector__XXX
+ SG_ SwAngVelCmd : 48|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ SwAngCmd : 32|16@1+ (0.1,-3000) [-3000|3553.5] "��" Vector__XXX
+ SG_ AmAngVelCmd : 16|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ AmAngleCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+
+BO_ 2365567345 TrajVrtlCmdR: 8 Vector__XXX
+ SG_ BkAngVelCmd : 48|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ BkAngleCmd : 32|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+ SG_ BmAngVelCmd : 16|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ BmAngleCmd : 0|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+
+BO_ 2365564016 BodyRlPcPos: 8 Vector__XXX
+ SG_ PcAngVelDH : 48|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ PcAngDH : 32|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+ SG_ RlAngVelDH : 16|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ RlAngDH : 0|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+
+BO_ 2365563248 FrntCFrmPos: 8 Vector__XXX
+ SG_ CFrmAngVelDH : 16|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ CFrmAngDH : 0|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+
+BO_ 2365563760 FrntBladePos: 8 Vector__XXX
+ SG_ BladeAngVelDH : 16|16@1+ (0.01,-300) [-300|355.35] "��/s" Vector__XXX
+ SG_ BladeAngDH : 0|16@1+ (0.01,-300) [-300|355.35] "��" Vector__XXX
+
+BO_ 2365565040 MachPosZ: 8 Vector__XXX
+ SG_ MachPosUp : 0|64@1- (0.001,0) [-9.22337203685478E+015|9.22337203685478E+015] "m" Vector__XXX
+
+BO_ 2365564528 MachPosX: 8 Vector__XXX
+ SG_ MachPosEast : 0|64@1- (0.001,0) [-9.22337203685478E+015|9.22337203685478E+015] "m" Vector__XXX
+
+BO_ 2566899568 PressureTr: 8 Vector__XXX
+ SG_ TravelLeftBackwardPressure : 48|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+ SG_ TravelLeftForwardPressure : 32|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+ SG_ TravelRightBackwardPressure : 16|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+ SG_ TravelRightForwardPressure : 0|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+
+BO_ 2566899312 PressureBkSw: 8 Vector__XXX
+ SG_ SwingLeftPressure : 48|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+ SG_ SwingRightPressure : 32|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+ SG_ BucketRodPressure : 16|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+ SG_ BucketHeadPressure : 0|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+
+BO_ 2566899056 PressureBmAm: 8 Vector__XXX
+ SG_ ArmRodPressure : 48|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+ SG_ ArmHeadPressure : 32|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+ SG_ BoomRodPressure : 16|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+ SG_ BoomHeadPressure : 0|16@1+ (0.0625,0) [0|400] "bar" Vector__XXX
+
+BO_ 2566900080 VboPress: 8 Vector__XXX
+ SG_ Pa2 : 48|16@1+ (0.25,0) [0|0] "bar" Vector__XXX
+ SG_ Pa1 : 32|16@1+ (0.25,0) [0|0] "bar" Vector__XXX
+ SG_ Pcmd2 : 16|16@1+ (0.25,0) [0|0] "bar" Vector__XXX
+ SG_ Pcmd1 : 0|16@1+ (0.25,0) [0|0] "bar" Vector__XXX
+
+BO_ 2566899824 VboFlow: 8 Vector__XXX
+ SG_ Qa2 : 48|16@1+ (10,0) [0|0] "cc/sec" Vector__XXX
+ SG_ Qa1 : 32|16@1+ (10,0) [0|0] "cc/sec" Vector__XXX
+ SG_ Qcmd2 : 16|16@1+ (10,0) [0|0] "cc/sec" Vector__XXX
+ SG_ Qcmd1 : 0|16@1+ (10,0) [0|0] "cc/sec" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ BO_ 2365571697 "This meassage is the result of broadcasting the output of the 2D MG system.";
+CM_ BO_ 2365568114 "This meassage is the result of broadcasting the output of the 2D MG system. 
+From start bit 32 of this message are reserved, and the corresponding data frame will be set 0.";
+CM_ BO_ 2365562992 "This message informs machine status.
+- SwStatus: During a swing motion, the LSB is set to 1. Otherwise it will be 0.
+From start bit 8 of this message are reserved, and the corresponding data frame will be set 0.";
+CM_ BO_ 2365565296 "This meassage is the result of broadcasting the output of the 3D MG system.";
+CM_ BO_ 2365564784 "This meassage is the result of broadcasting the output of the 3D MG system.";
+CM_ BO_ 2365564272 "This meassage is the result of broadcasting the output of the 2D MG system.";
+CM_ BO_ 2365567601 "This message is related to virtual command corresponds to control for arm and swing of a joystick left, but the physical value is their angles and angular velocities.";
+CM_ BO_ 2365567345 "This message is related to virtual command corresponds to control for boom and bucket of a joystick right, but the physical value is angles and angular velocities.";
+CM_ BO_ 2365564016 "This meassage is the result of broadcasting the output of the 2D MG system.";
+CM_ BO_ 2365563248 "This meassage is the result of broadcasting the output of the 2D MG system. 
+From start bit 32 of this message are reserved, and the corresponding data frame will be set 0.";
+CM_ BO_ 2365563760 "This meassage is the result of broadcasting the output of the 2D MG system. 
+From start bit 32 of this message are reserved, and the corresponding data frame will be set 0.";
+CM_ BO_ 2365565040 "This meassage is the result of broadcasting the output of the 3D MG system.";
+CM_ BO_ 2365564528 "This meassage is the result of broadcasting the output of the 3D MG system.";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "Yes","No";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","reserved","OnChange","reserved","reserved","reserved","NoSigSendType";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 10000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "Yes","No";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "DBName" "DOZER_AutoCAN";
+BA_ "VFrameFormat" BO_ 2365522544 3;
+BA_ "VFrameFormat" BO_ 2365522290 3;
+BA_ "VFrameFormat" BO_ 2566903408 3;
+BA_ "VFrameFormat" BO_ 2566903152 3;
+BA_ "VFrameFormat" BO_ 2566902896 3;
+BA_ "VFrameFormat" BO_ 2566902640 3;
+BA_ "VFrameFormat" BO_ 2566902384 3;
+BA_ "VFrameFormat" BO_ 2566902128 3;
+BA_ "VFrameFormat" BO_ 2566901872 3;
+BA_ "VFrameFormat" BO_ 2365568626 3;
+BA_ "VFrameFormat" BO_ 2365568625 3;
+BA_ "VFrameFormat" BO_ 2365565552 3;
+BA_ "VFrameFormat" BO_ 2365568880 3;
+BA_ "VFrameFormat" BO_ 2365571697 3;
+BA_ "VFrameFormat" BO_ 2365568114 3;
+BA_ "VFrameFormat" BO_ 2365562992 3;
+BA_ "VFrameFormat" BO_ 2365565296 3;
+BA_ "VFrameFormat" BO_ 2365564784 3;
+BA_ "VFrameFormat" BO_ 2365564272 3;
+BA_ "VFrameFormat" BO_ 2365567601 3;
+BA_ "VFrameFormat" BO_ 2365567345 3;
+BA_ "VFrameFormat" BO_ 2365564016 3;
+BA_ "VFrameFormat" BO_ 2365563248 3;
+BA_ "VFrameFormat" BO_ 2365563760 3;
+BA_ "VFrameFormat" BO_ 2365565040 3;
+BA_ "VFrameFormat" BO_ 2365564528 3;
+BA_ "VFrameFormat" BO_ 2566899568 3;
+BA_ "VFrameFormat" BO_ 2566899312 3;
+BA_ "VFrameFormat" BO_ 2566899056 3;
+BA_ "VFrameFormat" BO_ 2566900080 3;
+BA_ "VFrameFormat" BO_ 2566899824 3;
+BA_ "GenSigStartValue" SG_ 3221225472 PostSwAngVelCmd 0;
+BA_ "GenSigStartValue" SG_ 3221225472 PostSwAngCmd 0;
+BA_ "GenSigStartValue" SG_ 3221225472 PostBkAngVelCmd 0;
+BA_ "GenSigStartValue" SG_ 3221225472 PostBkAngCmd 0;
+BA_ "GenSigStartValue" SG_ 3221225472 PostAmAngVelCmd 0;
+BA_ "GenSigStartValue" SG_ 3221225472 PostAmAngCmd 0;
+BA_ "GenSigStartValue" SG_ 3221225472 PostBmAngVelCmd 0;
+BA_ "GenSigStartValue" SG_ 3221225472 PostBmAngCmd 0;
+BA_ "GenSigStartValue" SG_ 2365571697 AgSlopeAng 0;
+BA_ "GenSigStartValue" SG_ 2365571697 AgBkTipZ0 0;
+BA_ "GenSigStartValue" SG_ 2365571697 AgBkTipY0 0;
+BA_ "GenSigStartValue" SG_ 2365571697 AgBkTipX0 0;
+BA_ "GenSigStartValue" SG_ 2365568114 TrajVrtlCmdLR 1000;
+BA_ "GenSigStartValue" SG_ 2365568114 TrajVrtlCmdFR 1000;
+BA_ "GenSigStartValue" SG_ 2365564272 YwAngleVel 0;
+BA_ "GenSigStartValue" SG_ 2365564272 YwAngle 0;
+BA_ "GenSigStartValue" SG_ 2365564272 HdAngVel 0;
+BA_ "GenSigStartValue" SG_ 2365564272 HdAng 0;
+BA_ "GenSigStartValue" SG_ 2365567601 SwAngVelCmd 0;
+BA_ "GenSigStartValue" SG_ 2365567601 SwAngCmd 0;
+BA_ "GenSigStartValue" SG_ 2365567601 AmAngVelCmd 0;
+BA_ "GenSigStartValue" SG_ 2365567601 AmAngleCmd 0;
+BA_ "GenSigStartValue" SG_ 2365567345 BkAngVelCmd 0;
+BA_ "GenSigStartValue" SG_ 2365567345 BkAngleCmd 0;
+BA_ "GenSigStartValue" SG_ 2365567345 BmAngVelCmd 0;
+BA_ "GenSigStartValue" SG_ 2365567345 BmAngleCmd 0;
+BA_ "GenSigStartValue" SG_ 2365564016 PcAngVelDH 0;
+BA_ "GenSigStartValue" SG_ 2365564016 PcAngDH 0;
+BA_ "GenSigStartValue" SG_ 2365564016 RlAngVelDH 0;
+BA_ "GenSigStartValue" SG_ 2365564016 RlAngDH 0;
+BA_ "GenSigStartValue" SG_ 2365563248 CFrmAngVelDH 0;
+BA_ "GenSigStartValue" SG_ 2365563248 CFrmAngDH 0;
+BA_ "GenSigStartValue" SG_ 2365563760 BladeAngVelDH 0;
+BA_ "GenSigStartValue" SG_ 2365563760 BladeAngDH 0;
+

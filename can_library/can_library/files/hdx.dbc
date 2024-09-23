@@ -1,0 +1,114 @@
+VERSION ""
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+BO_ 2181016064 PHM_MainPump_SwingDevice_Limit: 8 Vector__XXX
+ SG_ SwingMotor_HealthIndex_Limit : 48|15@1+ (0.00306,0) [0|0] "" Vector__XXX
+ SG_ SwingReduction_2ndGear_Limit : 32|15@1+ (0.00306,0) [0|0] "" Vector__XXX
+ SG_ SwingReduction_1stGear_Limit : 16|15@1+ (0.00306,0) [0|0] "" Vector__XXX
+ SG_ MainPump_HealthIndex_Limit : 0|15@1+ (0.00306,0) [0|0] "" Vector__XXX
+
+BO_ 2181015552 PHM_HydraulicOil_Quality_Limit: 8 Vector__XXX
+ SG_ HydraulicOilDielConstant_Lwlimit : 48|16@1+ (0.00012207,0) [0|0] "" Vector__XXX
+ SG_ HydraulicOilViscousity_Lwlimit : 16|16@1+ (0.015625,0) [0|0] "cSt" Vector__XXX
+ SG_ HydraulicOilDielConstant_Uplimit : 32|16@1+ (0.00012207,0) [0|0] "" Vector__XXX
+ SG_ HydraulicOilViscousity_Uplimit : 0|16@1+ (0.015625,0) [0|0] "cSt" Vector__XXX
+
+BO_ 2181015296 PHM_EngineOil_Quality_Limit: 8 Vector__XXX
+ SG_ EngineOilDielecConstant_Lwlimit : 48|16@1+ (0.00012207,0) [0|0] "" Vector__XXX
+ SG_ EngineOilViscousity_Lwlimit : 16|16@1+ (0.015625,0) [0|0] "cSt" Vector__XXX
+ SG_ EngineOilDielecConstant_Uplimit : 32|16@1+ (0.00012207,0) [0|0] "" Vector__XXX
+ SG_ EngineOilViscousity_Uplimit : 0|16@1+ (0.015625,0) [0|0] "cSt" Vector__XXX
+
+BO_ 2181015040 PHM_HydraulicOil: 8 Vector__XXX
+ SG_ HydraulicOilQualityStatus : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HydraulicOilSensorStatus : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HydraulicOilDielecConstant60Deg : 32|16@1+ (0.00012207,0) [0|0] "" Vector__XXX
+ SG_ HydraulicOilViscousity60Deg : 16|16@1+ (0.015625,0) [0|0] "cSt" Vector__XXX
+ SG_ HydraulicOilTemperature : 0|16@1- (0.0315,0) [0|0] "degC" Vector__XXXgd
+
+BO_ 2181015808 PHM_MainPump_SwingDevice: 8 Vector__XXX
+ SG_ SwingMotor_Status : 63|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SwingMotor_HealthIndex : 48|15@1+ (0.00306,0) [0|0] "" Vector__XXX
+ SG_ SwingReduction_2ndGear_Status : 47|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SwingReduction_2ndGear_Index : 32|15@1+ (0.00306,0) [0|0] "" Vector__XXX
+ SG_ SwingReduction_1stGear_Status : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SwingReduction_1stGear_Index : 16|15@1+ (0.00306,0) [0|0] "" Vector__XXX
+ SG_ MainPump_Status : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MainPump_HealthIndex : 0|15@1+ (0.00306,0) [0|0] "" Vector__XXX
+
+BO_ 2181014784 PHM_EngineOil: 8 Vector__XXX
+ SG_ EngineOilQualityStatus : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EngineOilSensorStatus : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EngineOilDielecConstant60Deg : 32|16@1+ (0.00012207,0) [0|0] "" Vector__XXX
+ SG_ EngineOilViscousity60Deg : 16|16@1+ (0.015625,0) [0|0] "cSt" Vector__XXX
+ SG_ EngineOilTemperature : 0|16@1- (0.0315,0) [0|0] "degC" Vector__XXX
+	
+BO_ 2181014528 PHM_Time: 8 Vector__XXX
+ SG_ TimeStamp : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ EngineTotalHoursOfOperation : 0|32@1+ (0.05,0) [0|210554060.75] "hr" Vector__XXX
+
+BO_ 2566910760 GP_Weighing: 8 Vector__XXX
+ SG_ FFF3_WeighingAuto : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FFF3_WeighingQuantity : 32|16@1+ (1,0) [0|65535] "kg" Vector__XXX
+ SG_ FFF3_WeighingCount : 16|16@1+ (1,0) [0|65535] "time" Vector__XXX
+ SG_ FFF3_WeighingTarget : 0|16@1+ (1,0) [0|65535] "kg" Vector__XXX
+ 
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT -3.4E+038 3.4E+038;
+BA_DEF_ SG_  "SPN" INT -3.4E+038 3.4E+038;
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "SigType" "Default";
+BA_ "BusType" "CAN";
+BA_ "ProtocolType" "J1939";
+BA_ "VFrameFormat" BO_ 2181016064 3;
+BA_ "VFrameFormat" BO_ 2181015552 3;
+BA_ "VFrameFormat" BO_ 2181015296 3;
+BA_ "VFrameFormat" BO_ 2181015040 3;
+BA_ "VFrameFormat" BO_ 2181015808 3;
+BA_ "VFrameFormat" BO_ 2181014784 3;
+BA_ "VFrameFormat" BO_ 2181014528 3;
+
+
+
