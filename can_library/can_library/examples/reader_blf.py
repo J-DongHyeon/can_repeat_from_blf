@@ -21,7 +21,7 @@ if __name__ == "__main__":
     #     'dbcPath': dbc_file,
     # })
 
-    blf_file = os.path.join(Path(__file__).parent.parent, '/home/aiden/tm_ws/can_repeat_from_blf/blf_files/E23_DTMS_17_can1_20240911_160000__20240911_162959.BLF')
+    blf_file = os.path.join(Path(__file__).parent.parent, '/home/aiden/tm_ws/can_repeat_from_blf/blf_files/E23_DTMS_17_can1_20240911_130000__20240911_132959.BLF')
 
     bus = can.interface.Bus(channel='can0', bustype='socketcan', bitrate=250000)
 
@@ -62,8 +62,8 @@ if __name__ == "__main__":
     idx = 0
     while True:
         idx += 1 
-        if idx == 2 :
-            reader.stopReadBlf()
+        # if idx == 2 :
+            # reader.stopReadBlf()
             # print(reader.getBlfDataList())
         time.sleep(1)
 

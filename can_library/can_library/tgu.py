@@ -17,6 +17,9 @@ FF45_GAUGE_DATA_FUEL_LEVEL = "FF45_GaugeData_FuelLevel"
 FUEL_LEVEL1 = "FuelLevel1"
 FUEL_LEVEL2 = "FuelLevel2"
 HYDRAULIC_OIL_TEMPERATURE = "HydraulicOilTemperature"
+FF45_GAUGEDATA_HYDOILTEMP = "FF45_GaugeData_HydOilTemp"
+ENGINE_OIL_TEMPERATURE1 = "EngineOilTemperature1"
+ENGINE_OIL_TEMPERATURE = "EngineOilTemperature"
 ENGINE_COOLANT_TEMPERATURE = "EngineCoolantTemperature"
 FF45_GAUGE_DATA_COOLANT_TEMP = "FF45_GaugeData_CoolantTemp"
 FFD8_COOLANT_TEMP = "FFD8_CoolantTemp"
@@ -37,6 +40,9 @@ class TGU:
            FUEL_LEVEL1,
            FUEL_LEVEL2,
            HYDRAULIC_OIL_TEMPERATURE,
+           FF45_GAUGEDATA_HYDOILTEMP,
+           ENGINE_OIL_TEMPERATURE1,
+           ENGINE_OIL_TEMPERATURE,
            ENGINE_COOLANT_TEMPERATURE,
            FF45_GAUGE_DATA_COOLANT_TEMP,
            FFD8_COOLANT_TEMP,
@@ -210,7 +216,7 @@ class TGU:
                 self._status_message.work_status = "work" if speed>=1200 else "idle"
             elif key == FUEL_LEVEL or key == FFD8_FUEL_LEVEL or key == FF45_GAUGE_DATA_FUEL_LEVEL or key == FUEL_LEVEL1 or key == FUEL_LEVEL2:
                 self._status_message.fuel_level = int(dic[key])
-            elif key == HYDRAULIC_OIL_TEMPERATURE:
+            elif key == HYDRAULIC_OIL_TEMPERATURE or key == FF45_GAUGEDATA_HYDOILTEMP or key == ENGINE_OIL_TEMPERATURE1 or key == ENGINE_OIL_TEMPERATURE:
                 self._status_message.hydraulic_oil_temp = float(dic[key])
             elif key == ENGINE_COOLANT_TEMPERATURE or key == FF45_GAUGE_DATA_COOLANT_TEMP or key == FFD8_COOLANT_TEMP:
                 self._status_message.coolant_temp = float(dic[key])

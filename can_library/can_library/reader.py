@@ -43,6 +43,7 @@ class Reader(object):
                 else:
                     print("Please Check BLF file path")
                     return
+                print(self.__read_blf_is_loop)
         t = threading.Thread(target=inner_function)
         t.daemon = True
         t.start()
@@ -115,7 +116,7 @@ class Reader(object):
                                 "canId": msg_data.arbitration_id,
                                 "canData": [format(byte, '02x') for byte in msg_data.data]}
                     print("read done")
-                    self.__read_blf_is_loop = False  
+                    # self.__read_blf_is_loop = False  
             else:
                 with can.BLFReader(fn) as f:     
                     msg_data = None           
@@ -135,7 +136,7 @@ class Reader(object):
                             "canData": [format(byte, '02x') for byte in msg_data.data]}
                     
                     print("read done")
-                    self.__read_blf_is_loop = False           
+                    # self.__read_blf_is_loop = False           
         except Exception as e:
             print("blf read fail: " + str(e) + str(msg_data))
      

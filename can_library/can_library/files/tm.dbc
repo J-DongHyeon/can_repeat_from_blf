@@ -179,7 +179,19 @@ BO_ 2566818849 VCU_AAI: 8 Vector__XXX
  SG_ RelativeHumidity : 48|8@1+ (0.4,0) [0|100] "%" Vector__XXX
 
 BO_ 2566843904 ECU_ET1: 8 Vector__XXX
- SG_ EngineCoolantTemperature : 0|8@1+ (1,-40) [-40|210] "��C" Vector__XXX
+ SG_ EngineCoolantTemperature : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ EngineFuelTemperature1 : 8|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ EngineOilTemperature1 : 16|16@1+ (0.03125,-273) [-273|1734.96875] "deg C" Vector__XXX
+ SG_ EngineTurbochargerOilTemperature : 32|16@1+ (0.03125,-273) [-273|1734.96875] "deg C" Vector__XXX
+ SG_ EngineIntercoolerTemperature : 48|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ EngChargeAirCoolThrmsttOpening : 56|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 2181014784 PHM_EngineOil: 8 Vector__XXX
+ SG_ EngineOilQualityStatus : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EngineOilSensorStatus : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EngineOilDielecConstant60Deg : 32|16@1+ (0.00012207,0) [0|0] "" Vector__XXX
+ SG_ EngineOilViscousity60Deg : 16|16@1+ (0.015625,0) [0|0] "cSt" Vector__XXX
+ SG_ EngineOilTemperature : 0|16@1- (0.0315,0) [0|0] "degC" Vector__XXX
 
 BO_ 2566844928 ECU_LFE1: 8 Vector__XXX
  SG_ EngineFuelRate : 0|16@1+ (0.05,0) [0|3212.75] "l/h" Vector__XXX
