@@ -31,6 +31,7 @@ class Reader(object):
         self.__read_blf_is_loop = True
         ext = fn[-3:].lower()
         def inner_function():
+            idx = 0
             while self.__read_blf_is_loop:
                 if(ext == "blf" or ext == "BLF"):
                     data_generator = self.__read_file_log(fn, filters)
@@ -43,7 +44,8 @@ class Reader(object):
                 else:
                     print("Please Check BLF file path")
                     return
-                print(self.__read_blf_is_loop)
+                idx += 1
+                print("retry: ", idx)
         t = threading.Thread(target=inner_function)
         t.daemon = True
         t.start()
