@@ -21,12 +21,12 @@ if __name__ == "__main__":
     #     'dbcPath': dbc_file,
     # })
 
-    blf_file = os.path.join(Path(__file__).parent.parent, '/home/aiden/tm_ws/can_repeat_from_blf/blf_files/E23_DTMS_17_can1_20240911_130000__20240911_132959.BLF')
+    blf_file = os.path.join(Path(__file__).parent.parent, '/home/aiden/tm_ws/can_repeat_from_blf/blf_files/E25_EXMS_01_can2_20240828_123000__20240828_125959.BLF')
 
     bus = can.interface.Bus(channel='can0', bustype='socketcan', bitrate=250000)
 
     # can_filters = '{"id1": 217056295, "id2": 217056289, "id3": 217056256, "id4": 419375875, "id5": 419414311, "id6": 419420193, "id7": 419382561, "id8": 419363863, "id9": 33531392, "id10": 419335201, "id11": 419360256, "id12": 419361280, "id13": 419420705, "id14": 419360512, "id15": 419357952, "id16": 33530880, "id17": 419358976, "id18": 419236096, "id19": 419307776}'
-    can_filters = '{"id1": 217056295, "id2": 217056289, "id4": 419375875, "id5": 419414311, "id6": 419420193, "id7": 419382561, "id8": 419363863, "id9": 33531392, "id10": 419335201, "id12": 419361280, "id13": 419420705, "id14": 419360512, "id15": 419357952, "id16": 33530880, "id17": 419358976, "id18": 419236096, "id19": 419307776}'
+    can_filters = '{"id1": 217056295, "id2": 217056289, "id3": 217056256, "id4": 419375875, "id5": 419414311, "id6": 419420193, "id7": 419382561, "id8": 419363863, "id9": 33531392, "id10": 419335201, "id12": 419361280, "id13": 419420705, "id14": 419360512, "id15": 419357952, "id16": 33530880, "id17": 419358976, "id18": 419236096, "id19": 419307776}'
 
 
     #callback function
@@ -37,6 +37,10 @@ if __name__ == "__main__":
         can_id = msg_dic["canId"]
         hex_list = msg_dic["canData"]
         can_data = [int(x, 16) for x in hex_list]
+
+        if can_id == 217056256 :
+            can_data[-1] = 0
+            can_data[-2] = 0
 
         can_msg  = can.Message(arbitration_id = can_id, data = can_data, is_extended_id=True)
 
@@ -62,8 +66,8 @@ if __name__ == "__main__":
     idx = 0
     while True:
         idx += 1 
-        # if idx == 2 :
-            # reader.stopReadBlf()
+        if idx == 2 :
+            reader.stopReadBlf()
             # print(reader.getBlfDataList())
         time.sleep(1)
 
